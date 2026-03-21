@@ -1,0 +1,17 @@
+services:
+  garay-web:
+    container_name: garay-web
+    build: .
+    restart: unless-stopped
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.garay-web.rule=Host(`garay.ivangar.com`)"
+      - "traefik.http.routers.garay-web.entrypoints=websecure"
+      - "traefik.http.routers.garay-web.tls.certresolver=letsencrypt"
+      - "traefik.http.services.garay-web.loadbalancer.server.port=3000"
+
+networks:
+  proxy:
+    external: true
