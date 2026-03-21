@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
-import { NumberTicker } from "@/components/ui/number-ticker";
+
 import { Ripple } from "@/components/ui/ripple";
 import { RippleButton } from "@/components/ui/ripple-button";
 
@@ -13,14 +13,16 @@ import { cn } from "@/lib/utils";
 export function Hero() {
   return (
     <section className="relative overflow-hidden pt-44 pb-20">
-      {/* Ripple background */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <Ripple mainCircleSize={210} numCircles={8} />
+      {/* Ripple background — centrado con el título */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square max-w-4xl">
+          <Ripple mainCircleSize={210} numCircles={8} />
+        </div>
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <AnimatedGradientText className="mb-8 inline-flex cursor-default">
+          <AnimatedGradientText className="mb-8 inline-flex cursor-default" colorFrom="#4a64eb" colorTo="#6d86f5">
             <Zap className="mr-2 size-4" />
             <span className="text-sm">Desarrollo Web a Medida</span>
           </AnimatedGradientText>
@@ -89,7 +91,7 @@ piloto automático.
               </div>
             ))}
             <div className="-ml-2.5 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1a1d27] bg-[#3a3a4a] text-xs font-bold text-white">
-              +<NumberTicker value={50} />
+              +50
             </div>
           </div>
 

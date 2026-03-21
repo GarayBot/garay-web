@@ -1,57 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Globe, Bot, Database, Users, FileText, BarChart3 } from "lucide-react";
 
 const SERVICIOS = [
   {
     Icon: Globe,
     name: "Desarrollo Web",
-    description: "Webs a medida, landing pages y e-commerce de alto rendimiento. Presencia online profesional que genera confianza y convierte.",
+    description: "Webs a medida, landing pages y e-commerce de alto rendimiento con tecnología de vanguardia.",
     href: "#contacto",
     cta: "Saber más",
-    gradient: "from-[#4a64eb]/20 to-transparent",
+    className: "col-span-3 lg:col-span-1",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-[#4a64eb]/10 to-transparent" />,
   },
   {
     Icon: Bot,
     name: "IA & Chatbots",
-    description: "Asistentes inteligentes que atienden, cualifican y automatizan 24/7. Para empresas que reciben +20 consultas al día.",
+    description: "Asistentes inteligentes para WhatsApp, email y atención al cliente. Tu negocio, 24/7.",
     href: "#contacto",
     cta: "Saber más",
-    gradient: "from-indigo-600/20 to-transparent",
+    className: "col-span-3 lg:col-span-2",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent" />,
   },
   {
     Icon: Database,
-    name: "Hub de Operaciones",
-    description: "Deja de hacer malabarismos con 6 herramientas. Todo en un solo sitio con datos en tiempo real.",
+    name: "CRM & Integraciones",
+    description: "Deja de hacer malabarismos con 6 herramientas. Centraliza todo en un solo sistema conectado.",
     href: "#contacto",
     cta: "Saber más",
-    gradient: "from-cyan-600/20 to-transparent",
+    className: "col-span-3 lg:col-span-2",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent" />,
   },
   {
     Icon: Users,
-    name: "Onboarding Automático",
-    description: "Cada nuevo cliente recibe una experiencia profesional sin follow-up manual. Flujo automático tras el pago.",
+    name: "Consultoría & Formación",
+    description: "Te guiamos para que tu equipo domine las herramientas sin depender de nadie.",
     href: "#contacto",
     cta: "Saber más",
-    gradient: "from-emerald-600/20 to-transparent",
-  },
-  {
-    Icon: FileText,
-    name: "Contenido con IA",
-    description: "Nunca te quedes sin contenido. La IA genera, adapta y publica por ti en +10 formatos.",
-    href: "#contacto",
-    cta: "Saber más",
-    gradient: "from-orange-600/20 to-transparent",
-  },
-  {
-    Icon: BarChart3,
-    name: "Dashboards en Vivo",
-    description: "Decisiones más rápidas con visibilidad instantánea de ventas, operaciones y métricas clave.",
-    href: "#contacto",
-    cta: "Saber más",
-    gradient: "from-pink-600/20 to-transparent",
+    className: "col-span-3 lg:col-span-1",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent" />,
   },
 ];
 
@@ -59,33 +48,19 @@ export function Servicios() {
   return (
     <section id="servicios" className="py-24 px-6">
       <div className="mx-auto max-w-6xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-14"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Nuestros Servicios</h2>
-          <p className="mt-3 text-[#888899]">Soluciones completas para eliminar procesos manuales.</p>
-        </motion.div>
+        <BlurFade delay={0.1} inView>
+          <p className="text-sm font-mono uppercase tracking-[0.2em] text-[#6d86f5] mb-3 text-center">Nuestros Servicios</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-4">Soluciones completas para tu negocio</h2>
+          <p className="text-[#888899] text-center max-w-2xl mx-auto mb-14">Desde tu web hasta la automatización total.</p>
+        </BlurFade>
 
-        <BentoGrid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[20rem]">
-          {SERVICIOS.map((s, i) => (
-            <BentoCard
-              key={s.name}
-              name={s.name}
-              description={s.description}
-              Icon={s.Icon}
-              href={s.href}
-              cta={s.cta}
-              className={i < 2 ? "lg:col-span-1 md:col-span-1" : "col-span-1"}
-              background={
-                <div className={`absolute inset-0 bg-gradient-to-br ${s.gradient} opacity-50`} />
-              }
-            />
-          ))}
-        </BentoGrid>
+        <BlurFade delay={0.2} inView>
+          <BentoGrid>
+            {SERVICIOS.map((s, i) => (
+              <BentoCard key={i} {...s} />
+            ))}
+          </BentoGrid>
+        </BlurFade>
       </div>
     </section>
   );
