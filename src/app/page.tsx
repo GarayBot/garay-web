@@ -7,6 +7,7 @@ import { Servicios } from "@/components/sections/servicios";
 import { CTAMid } from "@/components/sections/cta-mid";
 import { CasosExito } from "@/components/sections/casos-exito";
 import { Proceso } from "@/components/sections/proceso";
+import { Pricing } from "@/components/sections/pricing";
 import { Integraciones } from "@/components/sections/integraciones";
 import { FAQ } from "@/components/sections/faq";
 import { TestimoniosLong } from "@/components/sections/testimonios-long";
@@ -16,7 +17,7 @@ import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-clip">
       <Header />
       <DockNav />
       <Hero />
@@ -26,6 +27,7 @@ export default function Home() {
       <CTAMid />
       <CasosExito />
       <Proceso />
+      <Pricing />
       <Integraciones />
       <FAQ />
       <TestimoniosLong />

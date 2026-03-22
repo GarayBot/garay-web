@@ -15,7 +15,7 @@ export function Proceso() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="proceso" className="py-24 px-6">
+    <section id="proceso" className="py-24 px-4 md:px-6">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export function Proceso() {
                 <button
                   onClick={() => setActive(i)}
                   className={cn(
-                    "w-full text-left rounded-xl p-5 transition-all duration-300",
+                    "w-full text-left rounded-xl p-4 md:p-5 transition-all duration-300",
                     active === i
                       ? "bg-[#1e1e28] border border-[#333344]"
                       : "hover:bg-[#1a1a24]"
@@ -75,10 +75,10 @@ export function Proceso() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="rounded-2xl border border-[#2a2d3a] bg-[#1a1a24] overflow-hidden flex items-center justify-center min-h-[350px]"
+            className="hidden lg:flex rounded-2xl border border-[#2a2d3a] bg-[#1a1a24] overflow-hidden items-center justify-center min-h-[350px]"
           >
             <div className="p-10 text-center">
-              <div className="text-7xl font-black bg-gradient-to-br from-[#6d86f5] to-[#3b50d4] bg-clip-text text-transparent mb-4">
+              <div className="text-5xl md:text-7xl font-black bg-gradient-to-br from-[#6d86f5] to-[#3b50d4] bg-clip-text text-transparent mb-4">
                 {PASOS[active].num}
               </div>
               <h4 className="text-xl font-semibold text-white">{PASOS[active].titulo}</h4>

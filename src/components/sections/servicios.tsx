@@ -12,7 +12,7 @@ const SERVICIOS = [
     description: "Webs a medida, landing pages y e-commerce de alto rendimiento con tecnología de vanguardia.",
     href: "#contacto",
     cta: "Saber más",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-1 lg:col-span-1",
     background: <div className="absolute inset-0 bg-gradient-to-br from-[#4a64eb]/10 to-transparent" />,
   },
   {
@@ -21,7 +21,7 @@ const SERVICIOS = [
     description: "Asistentes inteligentes para WhatsApp, email y atención al cliente. Tu negocio, 24/7.",
     href: "#contacto",
     cta: "Saber más",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-1 lg:col-span-2",
     background: <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent" />,
   },
   {
@@ -30,7 +30,7 @@ const SERVICIOS = [
     description: "Deja de hacer malabarismos con 6 herramientas. Centraliza todo en un solo sistema conectado.",
     href: "#contacto",
     cta: "Saber más",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-1 lg:col-span-2",
     background: <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent" />,
   },
   {
@@ -39,14 +39,14 @@ const SERVICIOS = [
     description: "Te guiamos para que tu equipo domine las herramientas sin depender de nadie.",
     href: "#contacto",
     cta: "Saber más",
-    className: "col-span-3 lg:col-span-1",
+    className: "col-span-1 lg:col-span-1",
     background: <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent" />,
   },
 ];
 
 export function Servicios() {
   return (
-    <section id="servicios" className="py-24 px-6">
+    <section id="servicios" className="py-24 px-4 md:px-6">
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={0.1} inView>
           <p className="text-sm font-mono uppercase tracking-[0.2em] text-[#6d86f5] mb-3 text-center">Nuestros Servicios</p>

@@ -42,7 +42,7 @@ function Pill({ name, logo }: { name: string; logo: string | null }) {
 
 export function Integraciones() {
   return (
-    <section className="py-20 px-6 overflow-hidden">
+    <section className="py-20 px-4 md:px-6 overflow-hidden">
       <div className="mx-auto max-w-6xl mb-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export function Integraciones() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
             Utilizamos las últimas tecnologías
           </h2>
           <p className="mt-3 text-[#888899]">

@@ -26,7 +26,7 @@ export function Footer() {
     <footer className="border-t border-[#2a2d3a] bg-[#0f1117]">
       {/* Dotted decorative text */}
       <div className="relative py-20 overflow-hidden">
-        <p className="text-center text-[8vw] font-black uppercase tracking-wider leading-none"
+        <p className="text-center text-[18vw] md:text-[8vw] font-black uppercase tracking-wider leading-none"
            style={{
              color: "transparent",
              backgroundImage: "radial-gradient(circle, #2a2d3a 1px, transparent 1px)",
@@ -34,11 +34,13 @@ export function Footer() {
              WebkitBackgroundClip: "text",
              backgroundClip: "text",
            }}>
-          Automatiza. Escala. Triunfa.
+          <span className="block">AUTOMATIZA.</span>
+          <span className="block">ESCALA.</span>
+          <span className="block">TRIUNFA.</span>
         </p>
       </div>
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="mx-auto max-w-6xl px-4 md:px-6 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="text-2xl font-bold text-white">

@@ -7,23 +7,27 @@ import { Ripple } from "@/components/ui/ripple";
 import { RippleButton } from "@/components/ui/ripple-button";
 
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
-import { Zap, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-44 pb-20">
-      {/* Ripple background — centrado con el título */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square max-w-4xl">
-          <Ripple mainCircleSize={210} numCircles={8} />
-        </div>
+    <section className="relative pt-8 md:pt-44 pb-20">
+      {/* Ripple background — a la altura de los botones en desktop, más arriba en mobile */}
+      <div className="absolute inset-0 pointer-events-none -top-32 md:-top-[15%]">
+        <Ripple mainCircleSize={150} numCircles={6} />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <AnimatedGradientText className="mb-8 inline-flex cursor-default" colorFrom="#4a64eb" colorTo="#6d86f5">
-            <Zap className="mr-2 size-4" />
+      <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 text-center">
+        {/* Logo mobile — solo visible en mobile */}
+        <div className="md:hidden text-center mb-6">
+          <span className="text-2xl font-bold tracking-tight text-white">
+            Garay<span className="text-[#4a64eb]">.</span>
+          </span>
+        </div>
+
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="flex justify-center mb-8">
+          <AnimatedGradientText className="inline-flex items-center cursor-default" colorFrom="#4a64eb" colorTo="#6d86f5">
             <span className="text-sm">Desarrollo Web a Medida</span>
           </AnimatedGradientText>
         </motion.div>
@@ -32,7 +36,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
         >
           Haz crecer tu negocio,{" "}
           <span className="bg-gradient-to-r from-[#6d86f5] to-[#5b75f0] bg-clip-text text-transparent">no tu nómina.</span>
@@ -42,7 +46,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-6 text-lg text-[#9999aa] max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-base md:text-lg text-[#9999aa] max-w-2xl mx-auto leading-relaxed"
         >
           El camino a 6 cifras empieza con una web profesional, automatización inteligente y el trabajo diario en{" "}
 piloto automático.
@@ -54,13 +58,13 @@ piloto automático.
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="#contacto">
-            <RippleButton rippleColor="#4a64eb" className="bg-[#4a64eb] text-white rounded-full px-7 py-3 border-0 font-medium hover:bg-[#5b75f0] hover:shadow-lg hover:shadow-[#4a64eb]/25">
+          <a href="#contacto" className="w-full sm:w-auto">
+            <RippleButton rippleColor="#4a64eb" className="w-full sm:w-auto bg-[#4a64eb] text-white rounded-full px-7 py-3 border-0 font-medium hover:bg-[#5b75f0] hover:shadow-lg hover:shadow-[#4a64eb]/25">
               Reserva tu llamada
             </RippleButton>
           </a>
-          <a href="#servicios">
-            <RippleButton rippleColor="#fff" className="border border-[#3a3a4a] text-white rounded-full px-7 py-3 bg-transparent font-medium hover:bg-white/5 hover:border-[#555]">
+          <a href="#servicios" className="w-full sm:w-auto">
+            <RippleButton rippleColor="#fff" className="w-full sm:w-auto border border-[#3a3a4a] text-white rounded-full px-7 py-3 bg-transparent font-medium hover:bg-white/5 hover:border-[#555]">
               Ver servicios
             </RippleButton>
           </a>
@@ -78,7 +82,7 @@ piloto automático.
               <div
                 key={initials}
                 className={cn(
-                  "flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1a1d27] bg-gradient-to-br text-xs font-bold text-white",
+                  "flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full border-2 border-[#1a1d27] bg-gradient-to-br text-xs font-bold text-white",
                   i === 0 && "from-[#4a64eb] to-[#3b50d4]",
                   i === 1 && "from-emerald-600 to-teal-600",
                   i === 2 && "from-orange-600 to-red-600",
@@ -90,7 +94,7 @@ piloto automático.
                 {initials}
               </div>
             ))}
-            <div className="-ml-2.5 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#1a1d27] bg-[#3a3a4a] text-xs font-bold text-white">
+            <div className="-ml-2.5 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full border-2 border-[#1a1d27] bg-[#3a3a4a] text-xs font-bold text-white">
               +50
             </div>
           </div>
@@ -109,7 +113,7 @@ piloto automático.
           thumbnailSrc="https://placehold.co/1280x720/1a1d27/4a64eb?text=Garay+Web"
           thumbnailAlt="Video presentación Garay"
           animationStyle="from-bottom"
-          className="max-w-3xl mx-auto mt-16 border border-[#2a2d3a] rounded-xl"
+          className="max-w-full md:max-w-3xl mx-auto mt-10 md:mt-16 rounded-xl"
         />
       </div>
 

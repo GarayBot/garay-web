@@ -61,7 +61,7 @@ const FAQ_DATA = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-20 px-6">
+    <section id="faq" className="py-20 px-4 md:px-6">
       <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export function FAQ() {
                 key={i}
                 className="border-[#2a2d3a]"
               >
-                <AccordionTrigger className="py-5 text-base font-medium text-white hover:no-underline hover:text-[#6d86f5] transition-colors">
+                <AccordionTrigger className="py-5 text-sm md:text-base font-medium text-white hover:no-underline hover:text-[#6d86f5] transition-colors">
                   {item.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-[#9ca3af] leading-relaxed pb-5">
