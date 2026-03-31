@@ -27,7 +27,7 @@ export function Footer() {
     <footer className="border-t border-[#2a2d3a] bg-[#0f1117]">
       {/* Dotted decorative text */}
       <div className="relative py-20 overflow-hidden">
-        <p className="text-center text-[18vw] md:text-[8vw] font-black uppercase tracking-wider leading-none"
+        <p className="w-full text-center text-[11vw] md:text-[8vw] font-black uppercase tracking-normal md:tracking-wider leading-none"
            style={{
              color: "transparent",
              backgroundImage: "radial-gradient(circle, #2a2d3a 1px, transparent 1px)",
