@@ -56,19 +56,79 @@ const CASOS = [
     thumbnail: "/portfolio/Chefs/1.png",
     slug: "chefs",
   },
+  {
+    num: "06",
+    titulo: "Gestión de Brokers de Subastas",
+    empresa: "AppBrokers",
+    tags: ["React", "Node.js", "MongoDB"],
+    desc: "Sistema completo para brokers de subastas de vehículos. Gestión de pujas, clientes y operaciones.",
+    metricas: [{ valor: "11", label: "Pantallas" }, { valor: "3", label: "Roles" }],
+    thumbnail: "/portfolio/AppBrokers/1.png",
+    slug: "appbrokers",
+  },
+  {
+    num: "07",
+    titulo: "Experiencia 3D Interactiva",
+    empresa: "Aqualinks 3D",
+    tags: ["Three.js", "React", "Vite"],
+    desc: "Visualización 3D interactiva de productos con navegación inmersiva y animaciones en tiempo real.",
+    metricas: [{ valor: "3D", label: "Interactivo" }, { valor: "9", label: "Escenas" }],
+    thumbnail: "/portfolio/Aqualinks_3d/1.png",
+    slug: "aqualinks-3d",
+  },
+  {
+    num: "08",
+    titulo: "Gestión de Carrera Popular",
+    empresa: "Cursa Bellvitge",
+    tags: ["WordPress", "PHP", "WooCommerce"],
+    desc: "Plataforma completa para carreras populares con inscripción online, control de dorsales y resultados.",
+    metricas: [{ valor: "8", label: "Pantallas" }, { valor: "500+", label: "Corredores" }],
+    thumbnail: "/portfolio/CursaBellvitge/1.png",
+    slug: "cursabellvitge",
+  },
+  {
+    num: "09",
+    titulo: "Panel de Administración RBAC",
+    empresa: "Agetest",
+    tags: ["Laravel", "React", "Inertia.js"],
+    desc: "Plataforma con autenticación, control de acceso basado en roles, gestión de sesiones y notificaciones.",
+    metricas: [{ valor: "RBAC", label: "Permisos" }, { valor: "3", label: "Roles" }],
+    thumbnail: "/portfolio/Adminventa/1.png",
+    slug: "agetest",
+  },
+  {
+    num: "10",
+    titulo: "Plataforma Deportiva OnPlay",
+    empresa: "OnPlay",
+    tags: ["React", "Node.js", "Socket.io"],
+    desc: "Red social deportiva con reservas de pistas, torneos, ranking de jugadores y chat en tiempo real.",
+    metricas: [{ valor: "11", label: "Pantallas" }, { valor: "Real-time", label: "Chat" }],
+    thumbnail: "/portfolio/Onplay/1.png",
+    slug: "onplay",
+  },
 ];
 
-function CaseCard({ caso }: { caso: (typeof CASOS)[number] }) {
+// Mobile shows first 5, desktop shows all 10
+const MOBILE_CASOS = CASOS.slice(0, 5);
+
+function CaseCard({ caso, large }: { caso: (typeof CASOS)[number]; large?: boolean }) {
   return (
-    <a href={`/casos-de-exito/${caso.slug}`} className="group flex-shrink-0 w-full md:w-[35vw] lg:w-[28vw] rounded-2xl border border-[#2a2d3a] bg-[#1a1a24] overflow-hidden flex flex-col transition-all duration-300 hover:border-[#4a64eb]/40">
+    <a
+      href={`/casos-de-exito/${caso.slug}`}
+      className={`group flex-shrink-0 rounded-2xl border border-[#2a2d3a] bg-[#1a1a24] overflow-hidden flex flex-col transition-all duration-300 hover:border-[#4a64eb]/40 ${
+        large ? "w-full md:w-[42vw] lg:w-[36vw]" : "w-full"
+      }`}
+    >
       {/* Thumbnail */}
-      <div className="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a24] to-[#2a2d3a]">
+      <div className={`relative w-full overflow-hidden bg-gradient-to-br from-[#1a1a24] to-[#2a2d3a] ${
+        large ? "aspect-[16/11]" : "aspect-[16/10]"
+      }`}>
         <Image
           src={caso.thumbnail}
           alt={caso.titulo}
           fill
           className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 35vw"
+          sizes={large ? "(max-width: 768px) 100vw, 42vw" : "100vw"}
         />
       </div>
       <div className="p-5 md:p-7 flex flex-col flex-1">
@@ -149,11 +209,11 @@ function DesktopCarousel() {
         <div className="overflow-hidden">
           <div
             ref={trackRef}
-            className="flex gap-5 pl-8 lg:pl-[calc((100vw-72rem)/2+2rem)]"
+            className="flex gap-6 pl-8 lg:pl-[calc((100vw-72rem)/2+2rem)]"
             style={{ transform: `translate3d(${tx}px, 0, 0)` }}
           >
             {CASOS.map((caso) => (
-              <CaseCard key={caso.num} caso={caso} />
+              <CaseCard key={caso.num} caso={caso} large />
             ))}
           </div>
         </div>
@@ -199,7 +259,7 @@ export function CasosExito() {
           <h2 className="text-2xl font-bold tracking-tight mb-8">Resultados reales de empresas reales</h2>
         </BlurFade>
         <div className="flex flex-col gap-4">
-          {CASOS.map((caso, i) => (
+          {MOBILE_CASOS.map((caso, i) => (
             <BlurFade key={caso.num} delay={0.05 * i} inView>
               <CaseCard caso={caso} />
             </BlurFade>
