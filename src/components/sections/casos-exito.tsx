@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
-import { ExternalLink } from "lucide-react";
+
 
 const CASOS = [
   {
@@ -226,14 +226,9 @@ function DesktopCarousel() {
                 style={{ transform: `scaleX(${progress})` }}
               />
             </div>
-            <div className="flex items-center gap-3 flex-shrink-0">
-              <a href="/contacto" className="inline-flex items-center gap-2 rounded-full bg-[#4a64eb] px-5 py-2.5 text-xs font-medium text-white hover:bg-[#5b75f0]">
-                Ser el siguiente <ExternalLink className="h-3 w-3" />
-              </a>
-              <a href="/casos-de-exito" className="inline-flex items-center gap-2 rounded-full border border-[#4a64eb] px-5 py-2.5 text-xs font-medium text-[#4a64eb] hover:bg-[#4a64eb]/10 transition-colors">
-                Descubre +50 proyectos →
-              </a>
-            </div>
+            <a href="/casos-de-exito" className="inline-flex items-center gap-2 rounded-full border border-[#4a64eb] px-5 py-2.5 text-xs font-medium text-[#4a64eb] hover:bg-[#4a64eb]/10 transition-colors flex-shrink-0">
+              Descubre +50 proyectos →
+            </a>
           </div>
         </div>
       </div>
@@ -265,10 +260,7 @@ export function CasosExito() {
             </BlurFade>
           ))}
         </div>
-        <div className="mt-8 text-center flex flex-col items-center gap-3">
-          <a href="/contacto" className="inline-flex items-center gap-2 rounded-full bg-[#4a64eb] px-6 py-2.5 text-sm font-medium text-white hover:bg-[#5b75f0]">
-            ¿Listo para ser el siguiente? <ExternalLink className="h-3.5 w-3.5" />
-          </a>
+        <div className="mt-8 text-center">
           <a href="/casos-de-exito" className="inline-flex items-center gap-2 rounded-full border border-[#4a64eb] px-6 py-2.5 text-sm font-medium text-[#4a64eb] hover:bg-[#4a64eb]/10 transition-colors">
             Descubre +50 proyectos →
           </a>
