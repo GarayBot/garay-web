@@ -1,12 +1,24 @@
 "use client";
 
-import { useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import Cal, { getCalApi } from "@calcom/embed-react";
-import { motion } from "framer-motion";
-import { ArrowLeft, Mail, MapPin, Clock, Send } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ArrowLeft,
+  Mail,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+  Loader2,
+  User,
+  Building2,
+  Phone,
+  MessageSquare,
+} from "lucide-react";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { RippleButton } from "@/components/ui/ripple-button";
 
 const CONTACT_INFO = [
   {
@@ -59,20 +71,52 @@ const SOCIALS = [
   },
 ];
 
+type FormState = "idle" | "sending" | "success" | "error";
+
 export default function ContactoPage() {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi();
-      cal("ui", {
-        theme: "dark",
-        cssVarsPerTheme: {
-          dark: { "cal-brand": "#4a64eb" },
-          light: { "cal-brand": "#4a64eb" },
-        },
-        hideEventTypeDetails: false,
+  const [formState, setFormState] = useState<FormState>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormState("sending");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-    })();
-  }, []);
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Error al enviar el mensaje.");
+      }
+
+      setFormState("success");
+      setForm({ name: "", email: "", phone: "", company: "", message: "" });
+    } catch (err: unknown) {
+      setFormState("error");
+      setErrorMsg(
+        err instanceof Error ? err.message : "Error al enviar el mensaje."
+      );
+    }
+  };
 
   return (
     <main className="min-h-screen bg-[#0f1117] text-white">
@@ -106,19 +150,18 @@ export default function ContactoPage() {
           </BlurFade>
           <BlurFade delay={0.25} inView>
             <p className="mt-4 text-lg text-[#777788] max-w-2xl">
-              Reserva una consulta gratuita de 30 minutos. Analizamos tu negocio,
-              identificamos oportunidades y te proponemos un plan sin compromiso.
+              Cuéntanos qué necesitas y te responderemos en menos de 24 horas
+              con una propuesta personalizada.
             </p>
           </BlurFade>
         </div>
       </section>
 
-      {/* Content: Info + Cal embed */}
+      {/* Content */}
       <section className="mx-auto max-w-5xl px-6 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10">
-          {/* Sidebar: info de contacto */}
+          {/* Sidebar */}
           <div className="space-y-6">
-            {/* Contact cards */}
             {CONTACT_INFO.map((item, i) => (
               <BlurFade key={item.label} delay={0.1 + i * 0.05} inView>
                 <div className="rounded-xl border border-[#2a2d3a] bg-[#1a1a24] p-5">
@@ -189,26 +232,188 @@ export default function ContactoPage() {
             </BlurFade>
           </div>
 
-          {/* Cal.com embed */}
+          {/* Form */}
           <BlurFade delay={0.2} inView>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-2xl border border-[#2a2d3a] bg-[#1a1d27] overflow-hidden"
-            >
-              <Cal
-                calLink="garay-webs/consultoria-gratuita"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  overflow: "auto",
-                  minHeight: "550px",
-                }}
-                config={{ theme: "dark" }}
-              />
-            </motion.div>
+            <div className="rounded-2xl border border-[#2a2d3a] bg-[#1a1d27] p-6 md:p-8">
+              <AnimatePresence mode="wait">
+                {formState === "success" ? (
+                  <motion.div
+                    key="success"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="flex flex-col items-center justify-center py-16 text-center"
+                  >
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500/10 mb-6">
+                      <CheckCircle className="h-8 w-8 text-emerald-400" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">
+                      ¡Mensaje enviado!
+                    </h3>
+                    <p className="text-[#777788] max-w-md">
+                      Hemos recibido tu mensaje. Te responderemos en menos de 24
+                      horas con una propuesta personalizada.
+                    </p>
+                    <button
+                      onClick={() => setFormState("idle")}
+                      className="mt-8 text-sm text-[#6d86f5] hover:underline"
+                    >
+                      Enviar otro mensaje
+                    </button>
+                  </motion.div>
+                ) : (
+                  <motion.form
+                    key="form"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    onSubmit={handleSubmit}
+                    className="space-y-5"
+                  >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      {/* Name */}
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="flex items-center gap-2 text-sm font-medium text-[#aaaabb] mb-2"
+                        >
+                          <User className="h-3.5 w-3.5" />
+                          Nombre *
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          value={form.name}
+                          onChange={handleChange}
+                          placeholder="Tu nombre"
+                          className="w-full rounded-lg border border-[#2a2d3a] bg-[#0f1117] px-4 py-3 text-sm text-white placeholder-[#555566] outline-none transition-colors focus:border-[#4a64eb] focus:ring-1 focus:ring-[#4a64eb]/30"
+                        />
+                      </div>
+
+                      {/* Email */}
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="flex items-center gap-2 text-sm font-medium text-[#aaaabb] mb-2"
+                        >
+                          <Mail className="h-3.5 w-3.5" />
+                          Email *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          value={form.email}
+                          onChange={handleChange}
+                          placeholder="tu@email.com"
+                          className="w-full rounded-lg border border-[#2a2d3a] bg-[#0f1117] px-4 py-3 text-sm text-white placeholder-[#555566] outline-none transition-colors focus:border-[#4a64eb] focus:ring-1 focus:ring-[#4a64eb]/30"
+                        />
+                      </div>
+
+                      {/* Phone */}
+                      <div>
+                        <label
+                          htmlFor="phone"
+                          className="flex items-center gap-2 text-sm font-medium text-[#aaaabb] mb-2"
+                        >
+                          <Phone className="h-3.5 w-3.5" />
+                          Teléfono
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={form.phone}
+                          onChange={handleChange}
+                          placeholder="+34 600 000 000"
+                          className="w-full rounded-lg border border-[#2a2d3a] bg-[#0f1117] px-4 py-3 text-sm text-white placeholder-[#555566] outline-none transition-colors focus:border-[#4a64eb] focus:ring-1 focus:ring-[#4a64eb]/30"
+                        />
+                      </div>
+
+                      {/* Company */}
+                      <div>
+                        <label
+                          htmlFor="company"
+                          className="flex items-center gap-2 text-sm font-medium text-[#aaaabb] mb-2"
+                        >
+                          <Building2 className="h-3.5 w-3.5" />
+                          Empresa
+                        </label>
+                        <input
+                          type="text"
+                          id="company"
+                          name="company"
+                          value={form.company}
+                          onChange={handleChange}
+                          placeholder="Nombre de tu empresa"
+                          className="w-full rounded-lg border border-[#2a2d3a] bg-[#0f1117] px-4 py-3 text-sm text-white placeholder-[#555566] outline-none transition-colors focus:border-[#4a64eb] focus:ring-1 focus:ring-[#4a64eb]/30"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Message */}
+                    <div>
+                      <label
+                        htmlFor="message"
+                        className="flex items-center gap-2 text-sm font-medium text-[#aaaabb] mb-2"
+                      >
+                        <MessageSquare className="h-3.5 w-3.5" />
+                        Mensaje *
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        rows={5}
+                        value={form.message}
+                        onChange={handleChange}
+                        placeholder="Cuéntanos sobre tu proyecto, qué necesitas, plazos estimados..."
+                        className="w-full rounded-lg border border-[#2a2d3a] bg-[#0f1117] px-4 py-3 text-sm text-white placeholder-[#555566] outline-none transition-colors focus:border-[#4a64eb] focus:ring-1 focus:ring-[#4a64eb]/30 resize-none"
+                      />
+                    </div>
+
+                    {/* Error message */}
+                    {formState === "error" && (
+                      <motion.p
+                        initial={{ opacity: 0, y: -5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-sm text-red-400"
+                      >
+                        {errorMsg}
+                      </motion.p>
+                    )}
+
+                    {/* Submit */}
+                    <div className="flex items-center justify-between gap-4 pt-2">
+                      <p className="text-xs text-[#555566]">
+                        * Campos obligatorios
+                      </p>
+                      <RippleButton
+                        rippleColor="#4a64eb"
+                        type="submit"
+                        disabled={formState === "sending"}
+                        className="bg-[#4a64eb] text-white rounded-full px-8 py-3 border-0 font-medium hover:bg-[#5b75f0] hover:shadow-lg hover:shadow-[#4a64eb]/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {formState === "sending" ? (
+                          <span className="flex items-center gap-2">
+                            <Loader2 className="h-4 w-4 animate-spin" />
+                            Enviando...
+                          </span>
+                        ) : (
+                          <span className="flex items-center gap-2">
+                            <Send className="h-4 w-4" />
+                            Enviar mensaje
+                          </span>
+                        )}
+                      </RippleButton>
+                    </div>
+                  </motion.form>
+                )}
+              </AnimatePresence>
+            </div>
           </BlurFade>
         </div>
       </section>
@@ -221,7 +426,8 @@ export default function ContactoPage() {
               Sin compromiso. Sin letra pequeña.
             </h2>
             <p className="mt-3 text-[#777788] max-w-lg mx-auto">
-              Analizamos tu caso, te proponemos soluciones y tú decides. Así de simple.
+              Analizamos tu caso, te proponemos soluciones y tú decides. Así de
+              simple.
             </p>
           </BlurFade>
         </div>
