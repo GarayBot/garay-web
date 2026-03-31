@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { icon: FolderOpen, href: "#casos", sectionId: "casos", label: "Casos" },
   { icon: Tag, href: "#proceso", sectionId: "proceso", label: "Proceso" },
   { icon: HelpCircle, href: "#faq", sectionId: "faq", label: "FAQ" },
-  { icon: Mail, href: "/contacto", sectionId: "contacto", label: "Contacto" },
+  { icon: Mail, href: "https://cal.com/garay-webs/consultoria-gratuita", sectionId: "", label: "Agendar reunión", external: true },
 ];
 
 export function DockNav() {
@@ -71,6 +71,7 @@ export function DockNav() {
               <a
                 href={item.href}
                 aria-label={item.label}
+                {...("external" in item && item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="flex items-center justify-center w-full h-full"
               >
                 <item.icon className="size-[18px]" strokeWidth={1.8} />
