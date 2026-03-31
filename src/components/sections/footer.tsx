@@ -1,3 +1,5 @@
+import { Logo } from "@/components/ui/logo";
+
 export function Footer() {
   const servicios = [
     { label: "Desarrollo Web", href: "#servicios" },
@@ -11,13 +13,12 @@ export function Footer() {
     { label: "Sobre Nosotros", href: "#" },
     { label: "Casos de Éxito", href: "#casos" },
     { label: "Proceso", href: "#proceso" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Contacto", href: "/contacto" },
   ];
 
   const recursos = [
     { label: "Blog", href: "#" },
     { label: "FAQ", href: "#faq" },
-    { label: "Kit Digital", href: "#" },
     { label: "Política de Privacidad", href: "#" },
     { label: "Términos y Condiciones", href: "#" },
   ];
@@ -43,8 +44,8 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <a href="#" className="text-2xl font-bold text-white">
-              Garay.
+            <a href="#">
+              <Logo size="md" />
             </a>
             <p className="mt-3 text-sm text-[#9ca3af] leading-relaxed">
               Desarrollo web y automatización para empresas que quieren escalar.

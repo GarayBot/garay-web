@@ -52,7 +52,7 @@ export function TestimoniosLong() {
         </BlurFade>
       </div>
 
-      <div className="relative flex h-[500px] md:h-[600px] w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px]">
+      <div className="relative flex h-[400px] md:h-[450px] w-full mx-auto max-w-6xl flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] px-4 md:px-6">
         <div
           className="flex flex-row items-center gap-4"
           style={{

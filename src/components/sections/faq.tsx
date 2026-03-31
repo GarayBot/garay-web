@@ -16,12 +16,7 @@ const FAQ_DATA = [
   {
     q: "¿Cuánto cuesta un proyecto de desarrollo web?",
     a: "Depende de la complejidad. Una landing page puede partir de 1.500€ y un proyecto SaaS completo desde 5.000€. Ofrecemos presupuesto cerrado sin sorpresas tras la consulta estratégica inicial gratuita.",
-  },
-  {
-    q: "¿Puedo usar el Kit Digital para financiar mi proyecto?",
-    a: "Sí, somos agentes digitalizadores adheridos al programa Kit Digital. Podemos gestionar la subvención de hasta 12.000€ para que tu proyecto tenga coste cero o muy reducido.",
-  },
-  {
+  },  {
     q: "¿Cuánto tiempo tarda un proyecto en estar listo?",
     a: "Una landing page puede estar lista en 1-2 semanas. Proyectos más complejos como CRMs o plataformas suelen tardar entre 4 y 8 semanas. Siempre damos plazos realistas y los cumplimos.",
   },

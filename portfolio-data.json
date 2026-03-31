@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "adminventa",
+    "folder": "Adminventa",
+    "title": "Adminventa",
+    "general": "Adminventa es el portal más grande para administradores de fincas en España. Una plataforma web que conecta a administradores de fincas con empresas proveedoras de servicios del sector inmobiliario, creando un ecosistema de colaboración y visibilidad para ambas partes.",
+    "reto": "El cliente necesitaba crear un punto de encuentro digital entre administradores de fincas y las empresas que ofrecen servicios al sector (eficiencia energética, seguros, impermeabilizaciones, vigilancia, aislamientos, mantenimiento de jardines, etc.). No existía una plataforma centralizada donde est",
+    "solucion": "Desarrollé una plataforma web completa con las siguientes secciones clave: - **Landing page** con presentación del portal y carrusel de empresas colaboradoras destacadas. - **Directorio de empresas** con sistema de búsqueda avanzada por categoría, ubicación y tipo de servicio, con más de 30 categorí",
+    "techs_raw": "- WordPress (CMS) - Tema personalizado - PHP - CSS/HTML - Plugins de directorio y búsqueda avanzada",
+    "images": [
+      "/portfolio/Adminventa/1.png",
+      "/portfolio/Adminventa/2.png"
+    ],
+    "image_count": 2
+  },
+  {
+    "slug": "agetest",
+    "folder": "Agetest",
+    "title": "Agetest - Panel de Administracion",
+    "general": "Plataforma de administracion y gestion de usuarios construida con Laravel 11, Inertia.js y React. Incluye un sistema completo de autenticacion, control de acceso basado en roles y permisos (RBAC), gestion de sesiones, notificaciones in-app, y una extensa libreria de componentes UI reutilizables. Dis",
+    "reto": "El cliente necesitaba una plataforma de administracion robusta que sirviera como base para multiples proyectos. Requerian un sistema donde diferentes tipos de usuarios (administradores, usuarios regulares, superadmins) pudieran gestionar recursos con permisos granulares, incluyendo impersonacion de",
+    "solucion": "Desarrolle un panel de administracion full-stack utilizando Laravel como backend con Inertia.js para renderizado del lado del servidor combinado con React en el frontend. Implemente Spatie Permission para control de acceso granular con roles protegidos (Super Admin, Admin no pueden ser modificados p",
+    "techs_raw": "- Laravel 11 (PHP 8.2+) - Inertia.js + React 18 + TypeScript - Tailwind CSS - NextUI v2 (libreria de componentes) - Spatie Laravel Permission (roles y permisos) - Laravel Sanctum (autenticacion) - Lab",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "agro",
+    "folder": "Agro",
+    "title": "Agro Industrial Asesores - Web Corporativa Agricola",
+    "general": "Sitio web corporativo para Agro Industrial Asesores, una empresa de asesoria y servicios para el sector agroindustrial. Construido sobre WordPress con el tema Agrica (especializado en agricultura organica), incluye soporte multilingue, e-commerce con WooCommerce, diseño con Elementor Pro, optimizaci",
+    "reto": "Agro Industrial Asesores necesitaba una presencia web profesional que transmitiera confianza en el sector agroindustrial. Requerian un sitio multilingue para alcanzar mercados internacionales, capacidad de mostrar y vender productos agricolas online, formularios de contacto para consultas y un diseñ",
+    "solucion": "Implemente y personalice WordPress con el tema premium Agrica (especializado en agricultura organica) sobre un tema hijo para facilitar actualizaciones. Utilice Elementor Pro como constructor de paginas para un diseño flexible, Polylang para soporte multilingue, WooCommerce para el catalogo de produ",
+    "techs_raw": "- WordPress (CMS) - Tema Agrica v1.0.1 + Child Theme (tema premium agroindustrial) - Elementor + Elementor Pro (constructor de paginas) - WooCommerce (e-commerce) - Polylang + Connect Polylang Element",
+    "images": [
+      "/portfolio/Agro/1.png",
+      "/portfolio/Agro/10.png",
+      "/portfolio/Agro/2.png",
+      "/portfolio/Agro/3.png",
+      "/portfolio/Agro/4.png",
+      "/portfolio/Agro/5.png"
+    ],
+    "image_count": 10
+  },
+  {
+    "slug": "alexmago",
+    "folder": "AlexMago",
+    "title": "Alex Mago - CRM de Gestion de Eventos y Espectaculos",
+    "general": "CRM completo basado en Perfex CRM (CodeIgniter) personalizado para Alex Mago, un negocio de entretenimiento y espectaculos de magia. El sistema gestiona clientes, shows/eventos con actividades profesionales, facturacion, presupuestos, propuestas comerciales, proyectos, tareas, contratos, suscripcion",
+    "reto": "Alex Mago, un profesional del entretenimiento y la magia, necesitaba centralizar la gestion de su negocio: programacion de shows y eventos, seguimiento de clientes, facturacion, presupuestos, gestion de personal y proveedores. Ademas, requeria automatizar el envio de encuestas de satisfaccion post-e",
+    "solucion": "Personalice e implemente Perfex CRM (CodeIgniter) añadiendo 13 modulos custom adaptados al negocio de eventos y entretenimiento. El modulo principal de Shows permite gestionar eventos con tipo, fecha, ubicacion, numero de asistentes, organizador y actividades profesionales vinculadas. Integre un sis",
+    "techs_raw": "- Perfex CRM (CodeIgniter 3.x / PHP) - MySQL/MariaDB (base de datos) - Tailwind CSS + Bootstrap 3.4 (estilos) - Laravel Mix / Webpack (compilacion de assets) - PostCSS + SASS (preprocesamiento CSS) -",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "appbrokers",
+    "folder": "AppBrokers",
+    "title": "AppBrokers - Sistema de Gestion para Brokers de Subastas de Vehiculos",
+    "general": "Sistema de gestion integral para brokers de subastas de vehiculos (\"Sistema Broker Subastas\"), construido con React, Vite, Tailwind CSS, shadcn/ui y Supabase. La aplicacion permite gestionar vehiculos, clientes, pagos, documentos, reportes de casas de subastas (Copart, IAA, Manheim), historial de ac",
+    "reto": "El broker de subastas de vehiculos necesitaba un sistema centralizado para gestionar todas sus operaciones: seguimiento de vehiculos comprados en subastas, gestion de clientes, control de pagos e ingresos mensuales, documentacion, reportes de morosidad y un flujo de aprobacion para cambios criticos.",
+    "solucion": "Desarrolle una aplicacion SPA con React y Vite, utilizando shadcn/ui y Radix UI para una interfaz profesional. Supabase sirve como backend (PostgreSQL + autenticacion). El sistema incluye CRUD completo para vehiculos, clientes y pagos, un modulo de documentos con clasificacion por tipo, reportes de",
+    "techs_raw": "- React 18.2 + Vite - Tailwind CSS 3.3 + shadcn/ui + Radix UI - Supabase (PostgreSQL + autenticacion) - React Router DOM 6.16 (navegacion SPA) - React Hook Form 7.47 + Zod 3.22 (formularios y validaci",
+    "images": [
+      "/portfolio/AppBrokers/1.png",
+      "/portfolio/AppBrokers/10.png",
+      "/portfolio/AppBrokers/11.png",
+      "/portfolio/AppBrokers/2.png",
+      "/portfolio/AppBrokers/3.png",
+      "/portfolio/AppBrokers/4.png"
+    ],
+    "image_count": 11
+  },
+  {
+    "slug": "aqualinks-3d",
+    "folder": "Aqualinks_3d",
+    "title": "Aqualinks 3D",
+    "general": "Landing page inmersiva con animaciones 3D para Aqualinks, una empresa de tecnologia hidrica ubicada en Roquetes, Tarragona. La web presenta su aplicacion movil de gestion inteligente del agua dirigida a municipios, empresas industriales, comunidades de regantes y sector hostelero. Destaca por el uso",
+    "reto": "Aqualinks necesitaba una presencia web que transmitiera innovacion y tecnologia avanzada, acorde con su producto de monitorizacion IoT del agua. Querian diferenciarse de las webs corporativas tradicionales del sector hidrico con una experiencia visual memorable que mostrara las capacidades de su app",
+    "solucion": "Desarrolle una landing page de alto impacto visual utilizando React Three Fiber para renderizar modelos 3D de gotas de agua que se animan en funcion del scroll del usuario. La arquitectura incluye un sistema de animaciones basado en scroll progress (0-1) que controla la posicion, rotacion y escala d",
+    "techs_raw": "- React 18 + TypeScript - React Three Fiber + Drei (graficos 3D en WebGL) - Three.js (modelos GLTF de gotas de agua) - Vite (bundler y dev server) - Framer Motion (animaciones de entrada/salida) - Len",
+    "images": [
+      "/portfolio/Aqualinks_3d/1.png",
+      "/portfolio/Aqualinks_3d/2.png",
+      "/portfolio/Aqualinks_3d/3.png",
+      "/portfolio/Aqualinks_3d/4.png",
+      "/portfolio/Aqualinks_3d/5.png",
+      "/portfolio/Aqualinks_3d/6.png"
+    ],
+    "image_count": 9
+  },
+  {
+    "slug": "casermovil",
+    "folder": "Casermovil",
+    "title": "Casermovil - Plataforma E-commerce de Carga para Vehiculos Electricos",
+    "general": "Plataforma e-commerce completa para un servicio de carga movil de vehiculos electricos, construida sobre WordPress con WooCommerce. El sitio ofrece planes de suscripcion para servicios de carga, con pasarelas de pago integradas, gestion de productos y una experiencia de usuario moderna construida co",
+    "reto": "Casermovil necesitaba una plataforma web profesional para comercializar sus servicios de carga de vehiculos electricos. Requerian un sistema de suscripciones con diferentes planes, integracion de pagos (Stripe y PayPal), presencia en redes sociales y soporte multilingue para llegar a un publico mas",
+    "solucion": "Desarrolle una plataforma e-commerce completa utilizando WordPress con WooCommerce como base. Implemente el tema premium DetailX personalizado con Elementor como constructor de paginas. Configure productos de suscripcion con diferentes planes, integre pasarelas de pago (Stripe, PayPal, Elegro), feed",
+    "techs_raw": "- WordPress 6.5.4 + WooCommerce - Elementor Pro (constructor de paginas) - Tema DetailX con TRX Addons - Revolution Slider (carruseles) - Stripe + PayPal + Elegro (pasarelas de pago) - GTranslate (mul",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "chefs",
+    "folder": "Chefs",
+    "title": "Chefs - Dashboard de Administracion para Restaurantes",
+    "general": "Dashboard de administracion para restaurantes basado en el template premium Salero (Bootstrap 5). El proyecto incluye un panel de gestion con paginas para el interior del restaurante, busqueda, clientes, pedidos (checkout), facturas, reseñas, calendario, analiticas y perfiles de usuario. Complementa",
+    "reto": "El restaurante necesitaba un panel de administracion interno para gestionar las operaciones diarias: seguimiento de clientes, gestion de pedidos y checkout, generacion de facturas, monitorizacion de reseñas, calendario de reservas y analiticas del negocio. Ademas requerian un sitio web publico en Wo",
+    "solucion": "Implemente y personalice el template premium Salero (Bootstrap 5) para crear un dashboard de administracion adaptado al restaurante. El panel incluye modulos para gestion de interior del restaurante, busqueda de datos, clientes, proceso de checkout, facturacion, reseñas de clientes, calendario de ev",
+    "techs_raw": "- HTML5 + Bootstrap 5 (dashboard admin) - JavaScript + jQuery (interactividad) - DataTables (tablas de datos) - Swiper.js (carruseles) - Bootstrap Datetimepicker (selector de fechas) - Chart.js / Apex",
+    "images": [
+      "/portfolio/Chefs/1.png",
+      "/portfolio/Chefs/10.png",
+      "/portfolio/Chefs/11.png",
+      "/portfolio/Chefs/2.png",
+      "/portfolio/Chefs/3.png",
+      "/portfolio/Chefs/4.png"
+    ],
+    "image_count": 11
+  },
+  {
+    "slug": "coagrisan",
+    "folder": "Coagrisan",
+    "title": "Coagrisan - Plataforma de Gestion de Cooperativa Agricola",
+    "general": "Plataforma de gestion integral para Coagrisan Servicios S.L., una cooperativa agricola española. El sistema digitaliza las operaciones diarias de la cooperativa: gestion de socios, fincas, albaranes de entrega, pedidos con catalogo de productos, firma digital, control de tecnicos, pagos/abonos y seg",
+    "reto": "Coagrisan gestionaba las operaciones de su cooperativa (albaranes de entrega, pedidos de socios, control de fincas) con procesos manuales en papel. Los tecnicos debian rellenar albaranes fisicos en campo, los pedidos se hacian por telefono y las firmas se recogian en papel. Necesitaban una plataform",
+    "solucion": "Desarrolle una plataforma web/movil con Vue 3 y Express.js dividida en frontend y backend independientes. El frontend es una PWA con soporte Capacitor para uso nativo en iOS/Android, permitiendo a los tecnicos trabajar en campo con o sin conexion. Implemente un sistema de firma digital con canvas HT",
+    "techs_raw": "- Vue 3 (Composition API + TypeScript) - Vite (build tool) - PrimeVue 4 (libreria de componentes) - Tailwind CSS 4 - Capacitor (app nativa iOS/Android) - Workbox (Service Workers / PWA) - Express.js +",
+    "images": [
+      "/portfolio/Coagrisan/1.png"
+    ],
+    "image_count": 1
+  },
+  {
+    "slug": "cursabellvitge",
+    "folder": "CursaBellvitge",
+    "title": "Cursa Bellvitge - Plataforma de Gestion de Carrera Popular",
+    "general": "Plataforma web para la gestion integral de la Cursa Bellvitge, una carrera popular anual organizada en el barrio de Bellvitge, Barcelona. El sistema cubre todo el ciclo del evento: inscripcion de participantes con validacion de DNI, gestion de ediciones, clasificaciones por categoria/sexo/general, g",
+    "reto": "Los organizadores de la Cursa Bellvitge gestionaban las inscripciones y clasificaciones de la carrera de forma manual. Necesitaban una plataforma web donde los participantes pudieran inscribirse online, consultar las clasificaciones por diferentes criterios (posicion general, categoria de edad, sexo",
+    "solucion": "Desarrolle una aplicacion web custom en PHP con MySQL que gestiona el ciclo completo del evento deportivo. El frontend muestra un countdown al dia de la carrera, formulario de inscripcion con validacion de DNI y categorias por edad (0-6, 7-10, 11-20, 21-50, 50+, discapacidad), y un sistema de clasif",
+    "techs_raw": "- PHP 7.3+ (backend custom) - MySQL/MariaDB (base de datos) - HTML5 + CSS3 + JavaScript vanilla (frontend) - PHPMailer (envio de emails de confirmacion) - FPDF/FPDI (generacion de diplomas PDF) - Goog",
+    "images": [
+      "/portfolio/CursaBellvitge/1.png",
+      "/portfolio/CursaBellvitge/2.png",
+      "/portfolio/CursaBellvitge/3.png",
+      "/portfolio/CursaBellvitge/4.png",
+      "/portfolio/CursaBellvitge/5.png",
+      "/portfolio/CursaBellvitge/6.png"
+    ],
+    "image_count": 8
+  },
+  {
+    "slug": "descaro",
+    "folder": "Descaro",
+    "title": "Descaro - Agencia de Marketing Digital",
+    "general": "Diseño web y propuesta comercial completa para Descaro, una agencia de marketing digital y desarrollo web. El proyecto incluye el mockup de la landing page corporativa, planificacion del proyecto y propuesta comercial. La web presenta los servicios de la agencia: marketing digital, diseño web creati",
+    "reto": "Descaro necesitaba una web corporativa que transmitiera creatividad y profesionalidad como agencia de marketing digital. Debian mostrar sus servicios, modelo de trabajo, equipo, planes de precios y casos de exito de forma visual y atractiva para captar nuevos clientes empresariales.",
+    "solucion": "Diseñe una landing page moderna con una estetica vibrante (amarillo, naranja, verde) que refleja la personalidad creativa de la agencia. El layout utiliza un hero dividido con fotografia de oficina y bloques de color con CTAs prominentes. Incluye secciones de modelo de trabajo, estadisticas (500+ pr",
+    "techs_raw": "- Diseño UI/UX (mockup completo) - Propuesta comercial (PPTX) - Planificacion de proyecto (Excel)",
+    "images": [
+      "/portfolio/Descaro/1.jpg",
+      "/portfolio/Descaro/2.png"
+    ],
+    "image_count": 2
+  },
+  {
+    "slug": "evenhealth",
+    "folder": "EvenHealth",
+    "title": "Even Health",
+    "general": "Even Health es una aplicación móvil (iOS y Android) diseñada para ayudar a las personas a reducir su nivel de azúcar en sangre de forma natural. A través del análisis inteligente de comidas, seguimiento de fibra y carbohidratos, y recomendaciones personalizadas, la app guía a los usuarios hacia una",
+    "reto": "El cliente necesitaba desarrollar la landing page y la presencia web de una aplicación de salud que ya contaba con una base de más de 5.000 usuarios. El reto era comunicar de forma clara y atractiva el valor de la app — reducir el azúcar en sangre naturalmente — y convertir visitantes en descargas,",
+    "solucion": "Diseñé y desarrollé una landing page moderna y orientada a conversión con: - **Hero section** impactante con mockups reales de la app mostrando el análisis de comidas y las recomendaciones nutricionales. - **Sección de funcionalidades** detallada: escaneo de comidas con IA, seguimiento de fibra en l",
+    "techs_raw": "- HTML5 / CSS3 - JavaScript - Diseño responsive (mobile-first) - Integración con App Store y Google Play",
+    "images": [
+      "/portfolio/EvenHealth/1.png",
+      "/portfolio/EvenHealth/2.png",
+      "/portfolio/EvenHealth/3.png"
+    ],
+    "image_count": 3
+  },
+  {
+    "slug": "futdata",
+    "folder": "FutData",
+    "title": "FutData - Plataforma de Estadisticas de Futbol",
+    "general": "Plataforma web de estadisticas y analiticas de futbol construida sobre WordPress con un tema completamente personalizado. El sitio presenta datos detallados de La Liga y la Premier League con analisis de rendimiento por equipo, estadisticas de partidos codificadas por colores y analisis de lineas de",
+    "reto": "FutData necesitaba una plataforma web que permitiera visualizar y analizar estadisticas de futbol de forma clara e intuitiva. Requerian mostrar datos de La Liga y Premier League con indicadores visuales por colores (verde para victorias, rojo para derrotas, naranja para empates), estadisticas detall",
+    "solucion": "Desarrolle un tema WordPress completamente personalizado con paginas dedicadas para cada liga. El nucleo del proyecto es un motor de calculos en JavaScript (calculos.js, 73 KB) que colorea dinamicamente las celdas de las tablas segun resultados, con calculos separados para partidos como local y visi",
+    "techs_raw": "- WordPress 5.4+ con tema personalizado \"futdata\" - PHP 5.6+ + MySQL - HTML5 + CSS3 (Bootstrap 3) - JavaScript + jQuery (motor de calculos y visualizacion) - Slick Slider (carruseles) - FancyBox (ligh",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "gpasoc",
+    "folder": "GPAsoc",
+    "title": "Gutiérrez Pujadas & Partners",
+    "general": "Web corporativa para Gutiérrez Pujadas & Partners, una asesoría internacional fiscal, contable y jurídica con sede en Barcelona. La plataforma presenta los servicios del despacho, su equipo de 22 partners y su cartera de más de 1.500 clientes nacionales e internacionales.",
+    "reto": "El despacho necesitaba una presencia online profesional que reflejara su trayectoria de más de 35 años y transmitiera confianza a potenciales clientes tanto nacionales como internacionales. Además, debía servir como herramienta de captación de nuevos clientes, especialmente autónomos y empresas que",
+    "solucion": "Diseñé y desarrollé una web corporativa completa con un enfoque elegante y profesional: - **Landing page** con hero impactante y claim claro: \"Asesoría Internacional Fiscal, Contable y Jurídica\". - **Métricas de confianza** destacadas: 22 Partners, sede en Barcelona, 1.500 clientes. - **Presentación",
+    "techs_raw": "- WordPress (CMS) - Tema personalizado - PHP / HTML5 / CSS3 - JavaScript - Integración con Google Reviews - SEO on-page - Diseño responsive",
+    "images": [
+      "/portfolio/GPAsoc/1.png",
+      "/portfolio/GPAsoc/2.png",
+      "/portfolio/GPAsoc/3.png",
+      "/portfolio/GPAsoc/4.png",
+      "/portfolio/GPAsoc/5.png"
+    ],
+    "image_count": 5
+  },
+  {
+    "slug": "granda",
+    "folder": "Granda",
+    "title": "Granda - Sistema de Gestion de Concursos Online",
+    "general": "Plataforma web para gestion de concursos y competiciones online, construida con PHP, MySQL y autenticacion social mediante HybridAuth. El sistema permite a los usuarios registrarse, inscribirse en concursos, cumplir objetivos, acumular puntos y consultar clasificaciones. Incluye panel de administrac",
+    "reto": "Granda necesitaba una plataforma para organizar concursos online donde los participantes pudieran registrarse, completar objetivos y competir por puntos. Requerian autenticacion social para facilitar el registro, un sistema de clasificaciones transparente, subida de videos como evidencia de particip",
+    "solucion": "Desarrolle una plataforma web con PHP y MySQL que gestiona el ciclo completo de concursos: desde la inscripcion hasta la clasificacion final. Implemente autenticacion social con HybridAuth (Google, Facebook, Twitter, Discord, GitHub, LinkedIn y mas de 20 proveedores). El sistema de puntuacion asigna",
+    "techs_raw": "- PHP (procedural) - MySQL/MariaDB - HTML5 + CSS3 + JavaScript - HybridAuth (autenticacion social: Google, Facebook, Twitter, Discord, GitHub, LinkedIn) - Firebase PHP-JWT (autenticacion por tokens JW",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "guipix",
+    "folder": "Guipix",
+    "title": "Guipix - Branding Completo y Web",
+    "general": "Proyecto integral de branding y diseño web para Guipix, una marca de fotografia y contenido visual para comercios. El proyecto abarca la creacion completa de identidad de marca: guia de estilo, logotipo con variaciones, favicon, tipografia, kit de redes sociales, papeleria corporativa (stationery ki",
+    "reto": "Guipix necesitaba construir su identidad de marca desde cero como empresa de fotografia y contenido visual para comercios (tiendas, restaurantes, etc.). Requerian un branding profesional completo que pudieran aplicar en todos sus canales: web, redes sociales, materiales impresos y comunicaciones com",
+    "solucion": "Desarrolle un sistema de branding integral que incluye: guia de estilo con paleta de colores y tipografia, logotipo con multiples variaciones (horizontal, vertical, monocromo, color), favicon personalizado, kit completo de redes sociales (plantillas para posts e historias), papeleria corporativa (ta",
+    "techs_raw": "- Diseño de identidad de marca - Diseño grafico (logotipos, variaciones, aplicaciones) - Diseño de redes sociales (kit RRSS) - Diseño de papeleria corporativa - Produccion de video promocional - Propu",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "habitatche",
+    "folder": "Habitatche",
+    "title": "Habitatche (HJB - Habitat Jove Barcelona)",
+    "general": "Habitatche es una plataforma web de alquiler de pisos y habitaciones para estudiantes en Barcelona. Con más de 1.000 pisos y habitaciones alquilados cada año, conecta a estudiantes universitarios, Erasmus, de máster y doctorado con propietarios que ofrecen alojamiento amueblado y equipado.",
+    "reto": "El cliente gestionaba un volumen muy alto de alquileres para estudiantes en Barcelona, pero necesitaba una plataforma digital que centralizara toda la oferta de pisos, facilitara la búsqueda por zona, precio y disponibilidad, y generara confianza tanto en estudiantes como en propietarios. Además, de",
+    "solucion": "Desarrollé una plataforma web completa con doble enfoque (estudiantes y propietarios): - **Landing page** con hero visual de Barcelona y cifras de impacto (+1.000 alquileres/año). - **Buscador de pisos** con filtros por zona, precio y visualización en mapa. - **Fichas de pisos** con fotos, precio, d",
+    "techs_raw": "- WordPress (CMS) - PHP / HTML5 / CSS3 - JavaScript - Plugin de listado de propiedades personalizado - Integración con mapas (visualización por zonas) - Sistema multiidioma - Diseño responsive",
+    "images": [
+      "/portfolio/Habitatche/1.png",
+      "/portfolio/Habitatche/2.png",
+      "/portfolio/Habitatche/3.png"
+    ],
+    "image_count": 3
+  },
+  {
+    "slug": "homeforguest",
+    "folder": "HomeForGuest",
+    "title": "Home For Guest",
+    "general": "Home For Guest es una plataforma de alquiler vacacional que ofrece villas, apartamentos y casas rurales. Funciona como un marketplace completo donde los viajeros pueden buscar y reservar alojamientos vacacionales, y los propietarios pueden publicar y gestionar sus propiedades. Con presencia en desti",
+    "reto": "El cliente necesitaba una plataforma propia de alquiler vacacional que le permitiera independizarse de los grandes portales (Airbnb, Booking) y gestionar directamente las reservas con los huéspedes. Requería un sistema de búsqueda potente con múltiples filtros, fichas de alojamiento detalladas, sist",
+    "solucion": "Desarrollé una plataforma web completa de reservas vacacionales con: - **Landing page** con hero visual premium y buscador integrado (fechas, huéspedes, destino). - **Buscador avanzado** con filtros por: tipo de alojamiento (apartahotel, bungalow, cabaña, casa rural, chalet, estudio, finca, villa),",
+    "techs_raw": "- WordPress (CMS) - Plugin de reservas y gestión de propiedades personalizado - PHP / HTML5 / CSS3 - JavaScript - Sistema de filtrado dinámico - Integración con mapas - Sistema de valoraciones con est",
+    "images": [
+      "/portfolio/HomeForGuest/1.png",
+      "/portfolio/HomeForGuest/2.png",
+      "/portfolio/HomeForGuest/3.png"
+    ],
+    "image_count": 3
+  },
+  {
+    "slug": "intellimarketingai",
+    "folder": "IntelliMarketingAI",
+    "title": "IntelliMarketing AI",
+    "general": "IntelliMarketing AI es la web corporativa de una agencia especializada en servicios de Inteligencia Artificial para empresas. La plataforma presenta su oferta de agentes de IA personalizados, consultoría estratégica, contenido optimizado con IA y diseño web inteligente, posicionándose como partner t",
+    "reto": "El cliente necesitaba una presencia online que transmitiera innovación, tecnología de vanguardia y profesionalidad. Debía comunicar de forma clara servicios complejos de IA a un público empresarial no necesariamente técnico, generando confianza y convirtiendo visitantes en leads para consultoría. El",
+    "solucion": "Diseñé y desarrollé una web corporativa con estética dark/futurista que refuerza el posicionamiento tecnológico de la marca: - **Hero section** impactante con claim directo y logos de tecnologías (Anthropic, Gemini, Copilot, Heygen, Freepie) como prueba de expertise. - **Sección de servicios** con 4",
+    "techs_raw": "- WordPress (CMS) - Tema personalizado con diseño dark - PHP / HTML5 / CSS3 - JavaScript - Animaciones y efectos visuales 3D - Diseño responsive - SEO on-page",
+    "images": [
+      "/portfolio/IntelliMarketingAI/1.png",
+      "/portfolio/IntelliMarketingAI/2.png",
+      "/portfolio/IntelliMarketingAI/3.png",
+      "/portfolio/IntelliMarketingAI/4.png",
+      "/portfolio/IntelliMarketingAI/5.png"
+    ],
+    "image_count": 5
+  },
+  {
+    "slug": "juandashboard",
+    "folder": "JuanDashboard",
+    "title": "JuanDashboard - Panel de Administracion Corporativo",
+    "general": "Dashboard de administracion corporativo construido con Laravel 11, Inertia.js y React con TypeScript. Proporciona un sistema completo de gestion de usuarios con control de acceso granular basado en roles y permisos (RBAC), gestion de sesiones, notificaciones internas, gestor de medios, y un extenso",
+    "reto": "El cliente necesitaba un panel de administracion corporativo donde pudiera gestionar usuarios, asignar roles con permisos especificos, enviar notificaciones internas y tener control total sobre las sesiones activas de los usuarios. Ademas, requeria un sistema de impersonacion para que los administra",
+    "solucion": "Desarrolle un dashboard corporativo full-stack con Laravel como backend y React via Inertia.js para una experiencia SPA sin API separada. Implemente un sistema RBAC completo con Spatie Permission que incluye roles protegidos (Super Admin y Admin no pueden ser modificados por administradores regulare",
+    "techs_raw": "- Laravel 11 (PHP 8.2+) - Inertia.js + React 18 + TypeScript - Tailwind CSS - NextUI v2 (libreria de componentes) - Spatie Laravel Permission (RBAC) - Laravel Sanctum (autenticacion) - Lab404 Imperson",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "keyrambit",
+    "folder": "Keyrambit",
+    "title": "Keyrambit - Tienda Online TodoStore",
+    "general": "Tienda online completa para Keyrambit (todostore.es), un e-commerce multi-producto construido sobre WordPress con WooCommerce. La plataforma incluye integracion con canales de venta como Google, Pinterest y TikTok, tema premium Motta para una experiencia de compra moderna, y herramientas avanzadas d",
+    "reto": "Keyrambit necesitaba una tienda online profesional con capacidad para gestionar un catalogo amplio de productos, integrarse con multiples canales de venta online (Google Shopping, Pinterest, TikTok) y ofrecer una experiencia de compra optimizada para conversiones. Ademas requerian herramientas de em",
+    "solucion": "Implemente una tienda online con WordPress y WooCommerce utilizando el tema premium Motta, optimizado para e-commerce. Configure integraciones con Google Listings & Ads, Pinterest for WooCommerce y TikTok for WooCommerce para ventas multicanal. Añadi funcionalidades de comparacion de productos, mues",
+    "techs_raw": "- WordPress 6.8.1 + WooCommerce - Tema Motta + Motta Addons - Elementor (constructor de paginas) - Google Listings & Ads - Pinterest for WooCommerce - TikTok for WooCommerce - Yoast SEO - Jetpack (ren",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "laaguada",
+    "folder": "LaAguada",
+    "title": "LaAguada - Portal de Contenidos con SEO Avanzado",
+    "general": "Portal web de contenidos construido sobre WordPress con el tema GeneratePress, enfocado en la publicacion de articulos con optimizacion SEO avanzada, cumplimiento legal (GDPR) y herramientas de engagement como valoraciones, posts relacionados y comparticion en redes sociales. Incluye automatizacion",
+    "reto": "LaAguada (laguada.com) necesitaba un portal de contenidos robusto y optimizado para motores de busqueda. Requerian un sitio rapido, con buenas practicas SEO, cumplimiento normativo (GDPR, politica de cookies, avisos legales), sistema de valoraciones para los articulos y herramientas para maximizar e",
+    "solucion": "Implemente un portal de contenidos con WordPress y el tema GeneratePress (ligero y rapido). Configure Yoast SEO para optimizacion en buscadores, Fast Indexing API para indexacion rapida en Google, Schema markup para datos estructurados, y KK Star Ratings para valoraciones. Añadi herramientas de enga",
+    "techs_raw": "- WordPress 6.7.1 - Tema GeneratePress (rendimiento optimizado) - Yoast SEO (optimizacion SEO) - Fast Indexing API (indexacion Google) - Schema and Structured Data for WP - KK Star Ratings (valoracion",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "luzdegas",
+    "folder": "LuzDeGas",
+    "title": "Luz de Gas",
+    "general": "Sitio web completo para Luz de Gas, una de las salas de conciertos y clubs nocturnos mas iconicas de Barcelona. La web abarca multiples secciones: landing page principal, calendario de eventos, pagina de ambientes musicales (Moods), informacion del club, Sala B y seccion About Us. El diseno sigue un",
+    "reto": "Luz de Gas necesitaba una presencia digital a la altura de su reputacion como venue de referencia en la escena nocturna y musical de Barcelona. Requerian una web que mostrara su oferta de eventos, los diferentes ambientes musicales (Mimus, Kovo, La Sobremesa, Gaslight), el calendario de sesiones y c",
+    "solucion": "Desarrolle una single-page application con navegacion interna entre 6 paginas principales, manteniendo una experiencia fluida sin recargas. El diseno fue trasladado fielmente desde Figma con un enfoque pixel-perfect, utilizando componentes SVG importados directamente del diseno original. La paleta o",
+    "techs_raw": "- React 18 + TypeScript - Vite (build tool y dev server) - Tailwind CSS - shadcn/ui + Radix UI (componentes accesibles) - Embla Carousel (carruseles de contenido) - Lucide React (iconografia) - Rechar",
+    "images": [
+      "/portfolio/LuzDeGas/1.png",
+      "/portfolio/LuzDeGas/2.png",
+      "/portfolio/LuzDeGas/3.png",
+      "/portfolio/LuzDeGas/4.png",
+      "/portfolio/LuzDeGas/5.png",
+      "/portfolio/LuzDeGas/6.png"
+    ],
+    "image_count": 6
+  },
+  {
+    "slug": "mcortes",
+    "folder": "MCortes",
+    "title": "MCORTÉS",
+    "general": "MCORTÉS es un e-commerce de moda de lujo especializado en bolsos y accesorios de piel artesanales. La tienda online presenta las colecciones de la firma con una estética minimalista y premium, ofreciendo una experiencia de compra elegante que refleja la exclusividad y calidad de sus productos hechos",
+    "reto": "La firma MCORTÉS necesitaba una tienda online que estuviera a la altura de su posicionamiento de lujo. El e-commerce debía transmitir artesanía, exclusividad y diseño de autor, con una experiencia de navegación impecable que permitiera apreciar cada detalle de los productos. Además, necesitaba sopor",
+    "solucion": "Desarrollé un e-commerce premium con diseño minimalista centrado en el producto: - **Landing page** con editorial de moda a pantalla completa, estilo lookbook profesional. - **Catálogo de productos** con fotografía de producto sobre fondo blanco, diseño limpio tipo galería de arte. - **Fichas de pro",
+    "techs_raw": "- Shopify / WordPress + WooCommerce - Tema personalizado minimalista - HTML5 / CSS3 - JavaScript - Sistema de gestión de inventario con variantes de color - Fotografía profesional de producto - Diseño",
+    "images": [
+      "/portfolio/MCortes/1.png",
+      "/portfolio/MCortes/2.png",
+      "/portfolio/MCortes/3.png",
+      "/portfolio/MCortes/4.png"
+    ],
+    "image_count": 4
+  },
+  {
+    "slug": "marinaozean",
+    "folder": "MarinaOzean",
+    "title": "Marina Ozean - E-commerce y Portfolio Creativo",
+    "general": "Diseño web completo para Marina Ozean, un e-commerce y portfolio de productos creativos y de diseño. El proyecto incluye mockups desktop y responsive, diseño de menu lateral animado y propuesta comercial. La web presenta un catalogo visual de productos con estetica colorida y moderna, secciones de p",
+    "reto": "Marina Ozean necesitaba una web que combinara portfolio creativo con tienda online para vender productos de diseño. La estetica debia ser moderna, colorida y visualmente impactante, con navegacion intuitiva tanto en desktop como en movil. Requerian mostrar sus productos de forma atractiva con grid d",
+    "solucion": "Diseñe una web con hero section colorida utilizando bloques de colores vibrantes (rosa, azul, verde, amarillo) que enmarcan productos de diseño. La navegacion incluye un menu lateral animado en rosa con efecto slide-over. El diseño es completamente responsive con adaptacion movil donde el grid de pr",
+    "techs_raw": "- Diseño UI/UX (mockups desktop y responsive) - Propuesta comercial (PPTX) - Planificacion de proyecto (Excel)",
+    "images": [
+      "/portfolio/MarinaOzean/1.png",
+      "/portfolio/MarinaOzean/2.png"
+    ],
+    "image_count": 2
+  },
+  {
+    "slug": "mitravia",
+    "folder": "MiTravia",
+    "title": "MiTravia - Portal Web Multilingue con SEO",
+    "general": "Portal web multilingue construido sobre WordPress con el tema Astra, optimizado para rendimiento y posicionamiento en buscadores. El sitio incluye soporte multi-idioma con selector de banderas, SEO avanzado con Yoast, importacion masiva de contenido, compresion de imagenes y herramientas de segurida",
+    "reto": "MiTravia (mitravia.com) necesitaba un portal web que soportara multiples idiomas, estuviera altamente optimizado para SEO y pudiera gestionar grandes volumenes de contenido. Requerian herramientas para importacion masiva de datos, optimizacion automatica de imagenes, redireccion de URLs y seguridad",
+    "solucion": "Desarrolle el portal con WordPress y el tema Astra, conocido por su rendimiento excepcional. Configure el soporte multilingue con Language Icons Flags Switcher para cambio de idioma visual. Implemente Yoast SEO para optimizacion en buscadores, WP All Import para importacion masiva de contenido, WP S",
+    "techs_raw": "- WordPress 6.0.3 - Tema Astra (rendimiento optimizado) - Yoast SEO + Yoast SEO Settings Import/Export - Language Icons Flags Switcher (multilingue) - WP All Import (importacion masiva) - WP Smush (co",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "mundoctor",
+    "folder": "Mundoctor",
+    "title": "MunDoctor - Plataforma de Salud Digital",
+    "general": "Plataforma integral de salud digital que conecta pacientes con profesionales sanitarios. Sistema completo con 3 roles (pacientes, profesionales, administradores), gestion de citas en tiempo real, busqueda avanzada de profesionales con geolocalizacion, procesamiento de pagos con Stripe, notificacione",
+    "reto": "MunDoctor necesitaba una plataforma donde los pacientes pudieran buscar profesionales de salud por especialidad, ubicacion, valoracion y disponibilidad, y reservar citas online. Los profesionales sanitarios necesitaban gestionar su agenda, servicios, precios y recibir pagos. Los administradores requ",
+    "solucion": "Desarrolle una plataforma SaaS con arquitectura multi-rol usando Clerk para autenticacion con sincronizacion en tiempo real via webhooks. Implemente busqueda avanzada de profesionales con filtros multiples y geolocalizacion, un sistema de citas con verificacion de disponibilidad en tiempo real via S",
+    "techs_raw": "- React 18 + TypeScript + Vite - Tailwind CSS - Radix UI (componentes accesibles) - React Router (navegacion) - Socket.io Client (notificaciones en tiempo real) - Node.js 20 + Express.js - PostgreSQL",
+    "images": [
+      "/portfolio/Mundoctor/1.png",
+      "/portfolio/Mundoctor/10.png",
+      "/portfolio/Mundoctor/11.png",
+      "/portfolio/Mundoctor/12.png",
+      "/portfolio/Mundoctor/13.png",
+      "/portfolio/Mundoctor/14.png"
+    ],
+    "image_count": 31
+  },
+  {
+    "slug": "naturterapies",
+    "folder": "NaturTerapies",
+    "title": "NaturTerapies - Web para Consulta de Psicologia y Terapias Naturales",
+    "general": "Sitio web profesional para una consulta de psicologia y terapias naturales, construido sobre WordPress con el tema especializado Mindthera (Psychology and Counseling Theme). La web presenta los servicios terapeuticos, permite la captacion de clientes mediante formularios y ofrece una estetica calmad",
+    "reto": "NaturTerapies necesitaba una web profesional que transmitiera confianza y serenidad, acorde con los servicios de psicologia y terapias naturales que ofrecen. Requerian formularios de contacto para captacion de clientes, un diseño responsivo, navegacion intuitiva con mega-menu y la posibilidad de con",
+    "solucion": "Implemente una web con WordPress utilizando el tema Mindthera, diseñado especificamente para consultas de psicologia y counseling. Personalice el tema con Elementor como constructor de paginas, configure formularios de captacion con Fluent Form, implemente un mega-menu avanzado con RT Mega Menu y op",
+    "techs_raw": "- WordPress 6.7.1 - Tema Mindthera (Psychology & Counseling Theme) + Child Theme - Elementor (constructor de paginas visual) - Fluent Form (formularios de contacto y captacion) - RT Mega Menu (navegac",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "netissim",
+    "folder": "Netissim",
+    "title": "Netissim - Web Corporativa Multilingue",
+    "general": "Sitio web corporativo multilingue para Netissim (netissim.es), construido sobre WordPress con Elementor como constructor de paginas. La web soporta multiples idiomas mediante Polylang, incluye optimizacion SEO con Yoast, formularios con WPForms, y herramientas de seguridad y gestion de correo electr",
+    "reto": "Netissim necesitaba una web corporativa profesional que soportara multiples idiomas (español, gallego, portugues) para llegar a diferentes mercados. Requerian un diseño moderno y editable visualmente, formularios de contacto, optimizacion SEO y herramientas para gestionar las comunicaciones por emai",
+    "solucion": "Desarrolle la web corporativa con WordPress y Elementor para diseño visual. Configure Polylang para soporte multilingue completo (español, gallego, portugues) junto con Loco Translate para gestion de traducciones. Implemente Yoast SEO para posicionamiento, WPForms para formularios de contacto, Email",
+    "techs_raw": "- WordPress - Elementor (constructor de paginas) - Polylang (multilingue: español, gallego, portugues) - Loco Translate (gestion de traducciones) - Yoast SEO (optimizacion SEO) - WPForms (formularios)",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "nexingenieria",
+    "folder": "NexIngenieria",
+    "title": "NEX Ingeniería Consultant S.L.",
+    "general": "Web corporativa para NEX Ingeniería Consultant S.L., una empresa de ingeniería especializada en seguridad industrial, homologación de vehículos y gestión de licencias y actividades. Con más de 25 años de experiencia, 2.520 proyectos realizados y 1.425 clientes, es una de las pocas empresas acreditad",
+    "reto": "NEX Ingeniería necesitaba renovar su presencia digital para reflejar su trayectoria de más de 25 años y posicionarse como referente en ingeniería industrial. La web debía comunicar la amplitud de servicios técnicos especializados (seguridad industrial, homologaciones, inspecciones), mostrar sus acre",
+    "solucion": "Diseñé y desarrollé una web corporativa con estética premium dark que transmite seriedad técnica e innovación: - **Hero section** con animación 3D de malla dorada y claim que refuerza los valores: calidad, transparencia y proximidad. - **Sección \"Sobre nosotros\"** con foto del equipo completo (9+ pr",
+    "techs_raw": "- WordPress (CMS) - Tema personalizado con diseño dark/premium - PHP / HTML5 / CSS3 - JavaScript - Animación 3D en hero (malla de puntos) - Diseño responsive - SEO on-page",
+    "images": [
+      "/portfolio/NexIngenieria/1.png",
+      "/portfolio/NexIngenieria/2.png",
+      "/portfolio/NexIngenieria/3.png",
+      "/portfolio/NexIngenieria/4.png",
+      "/portfolio/NexIngenieria/5.png"
+    ],
+    "image_count": 5
+  },
+  {
+    "slug": "odda",
+    "folder": "Odda",
+    "title": "Odda - Sistema de Gestion Medica y Clinica",
+    "general": "Sistema integral de gestion medica construido con Symfony 7.2 y PostgreSQL. La plataforma gestiona citas medicas, historiales de pacientes, tratamientos, servicios, facturacion y reportes medicos. Incluye dashboards diferenciados por rol (admin, doctor, administrativo, marketing, paciente), calendar",
+    "reto": "La clinica necesitaba un sistema de gestion integral que cubriera todas sus operaciones: programacion de citas, seguimiento de historiales medicos, gestion de tratamientos y servicios, facturacion, reportes medicos y comunicacion con pacientes. Requerian dashboards diferenciados segun el rol del usu",
+    "solucion": "Desarrolle un sistema completo con Symfony 7.2, aprovechando Doctrine ORM para la capa de datos con PostgreSQL. La arquitectura soporta 5 roles (admin, doctor, administrativo, marketing, paciente) con dashboards personalizados. Integre FullCalendar para gestion visual de citas, ApexCharts para anali",
+    "techs_raw": "- Symfony 7.2 (PHP 8.2+) - PostgreSQL (via Doctrine ORM + Migrations) - Twig (templates + emails) - Bootstrap 5 + Stimulus.js (frontend) - FullCalendar (calendario de citas) - ApexCharts (15+ tipos de",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "onplay",
+    "folder": "Onplay",
+    "title": "Onplay - Plataforma de Reservas de Pistas Deportivas y Video de Partidos",
+    "general": "Aplicacion web moderna para reserva de pistas deportivas (campos de futbol) y gestion de videos de partidos, construida con React 18, Vite, Tailwind CSS, shadcn/ui y Supabase. Los usuarios pueden explorar pistas disponibles, reservar con calendario, ver grabaciones de partidos, crear clips de video",
+    "reto": "Onplay necesitaba una plataforma que combinara la reserva de pistas deportivas con la grabacion y visualizacion de partidos. Los usuarios debian poder explorar pistas con filtros, reservar a traves de un calendario, ver los videos de sus partidos grabados automaticamente, y crear clips de momentos d",
+    "solucion": "Desarrolle una SPA con React y Vite, utilizando Supabase como backend (PostgreSQL + auth). El sistema de reservas incluye un calendario interactivo (react-day-picker) con seleccion de horarios. La funcionalidad de video permite asociar grabaciones a reservas automaticamente (matching por ID de pista",
+    "techs_raw": "- React 18 + Vite - Tailwind CSS + shadcn/ui + Radix UI - Supabase (PostgreSQL + autenticacion) - React Router v6 (navegacion SPA) - Framer Motion (animaciones) - Embla Carousel (galerias) - react-day",
+    "images": [
+      "/portfolio/Onplay/1.png",
+      "/portfolio/Onplay/10.png",
+      "/portfolio/Onplay/11.png",
+      "/portfolio/Onplay/2.png",
+      "/portfolio/Onplay/3.png",
+      "/portfolio/Onplay/4.png"
+    ],
+    "image_count": 11
+  },
+  {
+    "slug": "osasuncbs",
+    "folder": "OsasunCBS",
+    "title": "Ösasun CBD",
+    "general": "Ösasun es la primera empresa de CBD en el País Vasco. Con 7 tiendas físicas en Euskal Herria (Bilbao, Getxo, Barakaldo, Donostia, Laudio, Errenteria, Basauri) y una tienda online, ofrece productos de cáñamo y CBD de calidad con asesoramiento personalizado. La web funciona como e-commerce completo y",
+    "reto": "Ösasun, operando desde 2020, necesitaba una plataforma online que complementara su red de 7 tiendas físicas en el País Vasco. Requería un e-commerce con carrito de compra, fichas de producto detalladas, un blog educativo sobre CBD (CBD News), y un directorio de sus tiendas físicas. El diseño debía t",
+    "solucion": "Desarrollé un e-commerce completo con una identidad visual fresca, colorida y diferenciadora: - **Landing page** con ilustraciones artísticas (formas orgánicas coloridas) y claim \"Cannabis para tu Bienestar\", rompiendo con la estética típica del sector. - **Tienda online** con categorías de producto",
+    "techs_raw": "- WordPress + WooCommerce - Tema personalizado con diseño ilustrado - PHP / HTML5 / CSS3 - JavaScript - WooCommerce (carrito, pagos, gestión de productos) - Integración con Google Reviews - Plugin de",
+    "images": [
+      "/portfolio/OsasunCBS/1.png",
+      "/portfolio/OsasunCBS/2.png",
+      "/portfolio/OsasunCBS/3.png",
+      "/portfolio/OsasunCBS/4.png",
+      "/portfolio/OsasunCBS/5.png"
+    ],
+    "image_count": 5
+  },
+  {
+    "slug": "padelprofi",
+    "folder": "PadelProfi",
+    "title": "Padel Profi Deutschland",
+    "general": "Padel Profi Deutschland es un e-commerce especializado en equipamiento de pádel para el mercado alemán. La tienda online ofrece un catálogo completo de palas, pelotas, zapatillas, paleteros, accesorios y sets de las principales marcas (Adidas, NOX, Bullpadel, Head), con envío gratuito, devoluciones",
+    "reto": "El cliente quería posicionarse como la tienda de pádel de referencia en Alemania, un mercado donde el deporte está en pleno crecimiento. Necesitaba un e-commerce completo con catálogo extenso, sistema de filtrado avanzado por marca, nivel de juego y características, fichas de producto detalladas con",
+    "solucion": "Desarrollé un e-commerce robusto y completo orientado a la conversión: - **Landing page** con hero dinámico, rating de Google (Ausgezeichnet/Excelente) y barra de beneficios (envío gratis, devolución gratis, pago seguro, asesoramiento profesional). - **Sección de bestsellers** con carrusel de produc",
+    "techs_raw": "- WordPress + WooCommerce - Tema personalizado con branding naranja/negro - PHP / HTML5 / CSS3 - JavaScript - WooCommerce (gestión de productos, carrito, pagos, envíos) - Sistema de filtrado avanzado",
+    "images": [
+      "/portfolio/PadelProfi/1.png",
+      "/portfolio/PadelProfi/2.png",
+      "/portfolio/PadelProfi/3.png",
+      "/portfolio/PadelProfi/4.png",
+      "/portfolio/PadelProfi/5.png"
+    ],
+    "image_count": 5
+  },
+  {
+    "slug": "pecadocarnal",
+    "folder": "PecadoCarnal",
+    "title": "Pecado Carnal - Agritek",
+    "general": "Plataforma SaaS de gestion de inventario multi-almacen diseñada especificamente para restaurantes. El sistema permite gestionar el ciclo completo de aprovisionamiento: desde el control de stock con alertas, pedidos automaticos a proveedores, recepcion de entregas, escaneo de facturas con OCR (inteli",
+    "reto": "Pecado Carnal, una cadena de restaurantes de hamburguesas premium en Madrid, gestionaba el inventario de sus multiples locales de forma manual con hojas de calculo. Esto provocaba desabastecimientos frecuentes, pedidos duplicados, dificultad para controlar las existencias entre almacenes y un proces",
+    "solucion": "Desarrolle una plataforma multi-tenant con arquitectura basada en organizaciones, donde cada restaurante/local tiene su propio espacio de datos aislado mediante Row Level Security de Supabase. Implemente un sistema de OCR con OpenAI Vision (GPT-4o) para escanear facturas y albaranes automaticamente,",
+    "techs_raw": "- Next.js 16 (App Router + Server Components) - React 19 + TypeScript - Supabase (Auth, PostgreSQL con RLS, Storage) - Tailwind CSS 4 + shadcn/ui - TanStack Table (tablas de datos avanzadas) - React H",
+    "images": [
+      "/portfolio/PecadoCarnal/1.png",
+      "/portfolio/PecadoCarnal/10.png",
+      "/portfolio/PecadoCarnal/11.png",
+      "/portfolio/PecadoCarnal/12.png",
+      "/portfolio/PecadoCarnal/13.png",
+      "/portfolio/PecadoCarnal/14.png"
+    ],
+    "image_count": 20
+  },
+  {
+    "slug": "pmmnapoles",
+    "folder": "Pmmnapoles",
+    "title": "PMMNAPOLES",
+    "general": "PMMNAPOLES es un e-commerce generalista orientado al mercado estadounidense que ofrece una amplia variedad de productos en múltiples categorías: hogar y cocina, ropa, tecnología, belleza, calzado, accesorios, deportes y fitness, y cuidado personal. Con envío gratis en pedidos superiores a $50, check",
+    "reto": "El cliente necesitaba montar una tienda online completa tipo marketplace dirigida al mercado de EE.UU., con un catálogo extenso de productos de múltiples categorías, sistema de notificaciones de stock, seguimiento de pedidos, centro de devoluciones y atención al cliente 24/7. Todo debía funcionar co",
+    "solucion": "Desarrollé un e-commerce completo con funcionalidades avanzadas de marketplace: - **Landing page** con hero visual atractivo, barra de anuncios animada (novedades semanales, envío gratis, checkout seguro, devoluciones fáciles) y categorías principales con iconos. - **Catálogo por categorías** con si",
+    "techs_raw": "- Shopify - Tema personalizado - HTML5 / CSS3 / JavaScript - Pasarela de pago integrada (USD) - Sistema de gestión de inventario con variantes - Sistema de notificaciones de stock - Diseño responsive",
+    "images": [
+      "/portfolio/Pmmnapoles/1.png",
+      "/portfolio/Pmmnapoles/2.png",
+      "/portfolio/Pmmnapoles/3.png"
+    ],
+    "image_count": 3
+  },
+  {
+    "slug": "railclick",
+    "folder": "Railclick",
+    "title": "Railclick - Plataforma de Viajes Multi-proyecto",
+    "general": "Proyecto integral de viajes que combina multiples subproyectos: una web principal WordPress con tema personalizado (Railclick), una guia de viajes WordPress (GuiaViajes) y una landing page moderna de viajes a Italia construida con Next.js 15, React 19, Tailwind CSS y Supabase. El conjunto cubre desd",
+    "reto": "Railclick necesitaba una plataforma de viajes completa que abarcara diferentes necesidades: un sitio principal para su marca, una guia de viajes con contenido editorial, y una landing page moderna y de alto rendimiento para paquetes turisticos a Italia. Cada subproyecto requeria un enfoque tecnologi",
+    "solucion": "Desarrolle tres subproyectos complementarios: (1) El sitio principal Railclick con WordPress y un tema personalizado (railclick-theme), incluyendo WooCommerce para reservas. (2) Una guia de viajes editorial tambien en WordPress. (3) Una landing page moderna para viajes a Italia con Next.js 15, React",
+    "techs_raw": "- **Sitio principal**: WordPress 6.5.4 + WooCommerce + tema personalizado railclick-theme - **Guia de viajes**: WordPress 6.8.2 - **Landing Italia**: Next.js 15.2.4 (App Router) + React 19 + TypeScrip",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "rentuki",
+    "folder": "Rentuki",
+    "title": "Rentuki - Marketplace de Alquiler Multi-vendedor",
+    "general": "Plataforma marketplace de alquiler multi-vendedor construida sobre WordPress con WooCommerce y el sistema Routiz. Permite a multiples vendedores publicar articulos en alquiler (coches, herramientas, equipamiento, bicicletas, barcos, camping, deportes) con sistema de reservas, calendario de disponibi",
+    "reto": "Rentuki necesitaba un marketplace de alquiler donde multiples vendedores pudieran registrarse y publicar sus articulos disponibles para alquiler. Requerian un sistema de reservas con calendario, multiples metodos de pago, un sistema de gamificacion para fidelizar usuarios, valoraciones y reseñas, no",
+    "solucion": "Implemente un marketplace completo con WordPress, WooCommerce y el sistema Routiz como motor de alquiler. Utilice el tema Brikk con un child theme Rentuki personalizado. Configure el sistema multi-vendedor con roles diferenciados (vendedor/cliente), calendario de disponibilidad con reservas por hora",
+    "techs_raw": "- WordPress 6.2.2 + WooCommerce - Routiz (motor de marketplace de alquiler) - Tema Brikk + Child Theme Rentuki - Elementor (constructor de paginas) - GamiPress (gamificacion: puntos, logros, pagos par",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "sotavento",
+    "folder": "Sotavento",
+    "title": "Sotavento - Tienda Online E-commerce",
+    "general": "Tienda online profesional construida sobre WordPress con WooCommerce y el tema premium Motta. La plataforma ofrece una experiencia de compra completa con comparacion de productos, muestras de variaciones, listas de deseos, chat en vivo con Tidio, multiples pasarelas de pago (Stripe, PayPal, Amazon P",
+    "reto": "Sotavento necesitaba una tienda online profesional con funcionalidades avanzadas de e-commerce: comparacion de productos, visualizacion de variaciones (colores, tallas), listas de deseos, chat en vivo para atencion al cliente, multiples opciones de pago internacionales y soporte multilingue para mer",
+    "solucion": "Desarrolle la tienda online con WordPress y WooCommerce utilizando el tema premium Motta, especializado en e-commerce. Configure WCBoost para comparacion de productos, muestras de variaciones y listas de deseos. Integre Tidio para chat en vivo, Mailchimp para email marketing, y multiples pasarelas d",
+    "techs_raw": "- WordPress 6.8.1 + WooCommerce - Tema Motta + Motta Addons - Elementor (constructor de paginas) - WooPayments/Stripe + PayPal + Amazon Pay + Klarna + Affirm (pagos) - WCBoost (comparacion, variacione",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "spikes",
+    "folder": "Spikes",
+    "title": "Spikes CRM/ERP",
+    "general": "Sistema CRM/ERP completo para una empresa B2C de ahorro energetico. Gestiona el ciclo completo de ventas: desde la captacion de leads, gestion de contratos de electricidad, gas y telefonia, liquidaciones de comisiones, campañas de marketing, hasta la generacion de documentos legales y facturas. Incl",
+    "reto": "Spikes, una empresa de intermediacion energetica, gestionaba sus contratos, leads y comisiones de agentes con herramientas dispersas (Excel, email, WhatsApp manual). Necesitaban centralizar todo el ciclo de ventas en una plataforma unica donde los agentes pudieran gestionar sus contratos, los manage",
+    "solucion": "Desarrolle un sistema de 3 microservicios: un frontend SPA con Next.js 14 que sirve como CRM visual, un backend REST API con Express.js y TypeORM para la logica de negocio y persistencia, y un chatbot de WhatsApp con OpenAI para atencion automatizada. Implemente autenticacion JWT con 3 niveles de ac",
+    "techs_raw": "- Next.js 14 (App Router) - React 18 + Tailwind CSS - JWT con jose (autenticacion) - @react-pdf/renderer + jsPDF (generacion PDF) - xlsx (exportacion Excel) - html2canvas (captura de pantalla para doc",
+    "images": [
+      "/portfolio/Spikes/1.png",
+      "/portfolio/Spikes/10.png",
+      "/portfolio/Spikes/11.png",
+      "/portfolio/Spikes/12.png",
+      "/portfolio/Spikes/13.png",
+      "/portfolio/Spikes/14.png"
+    ],
+    "image_count": 39
+  },
+  {
+    "slug": "sunoapp",
+    "folder": "SunoApp",
+    "title": "Suno App - API Wrapper y MVP para Generacion de Musica con IA",
+    "general": "Proyecto dual que integra la API de Suno.ai para generacion de musica con inteligencia artificial. Consta de dos componentes: (1) un API wrapper en Next.js que expone endpoints REST compatibles con OpenAI para acceder a las funcionalidades de Suno.ai, y (2) un MVP frontend con Next.js y NextUI que p",
+    "reto": "Se necesitaba una forma programatica de acceder a las funcionalidades de generacion de musica de Suno.ai, que no dispone de API publica oficial. Ademas, se requeria una interfaz web simple para que usuarios no tecnicos pudieran generar musica con IA, controlar sus creditos y reproducir las canciones",
+    "solucion": "Desarrolle dos componentes complementarios: (1) **Suno API** - Un wrapper REST en Next.js que hace ingenieria inversa de la API de Suno.ai, mantiene la autenticacion activa con renovacion automatica de tokens, y expone endpoints compatibles con el formato de OpenAI (`/v1/chat/completions`). Incluye",
+    "techs_raw": "- Next.js 14.1.4 (App Router) + TypeScript - Tailwind CSS - Axios + tough-cookie (gestion de sesiones) - Swagger UI + next-swagger-doc (documentacion API) - Pino (logging) - Vercel Analytics - Docker",
+    "images": [
+      "/portfolio/SunoApp/1.png"
+    ],
+    "image_count": 1
+  },
+  {
+    "slug": "tradinglateral",
+    "folder": "TradingLateral",
+    "title": "TradingLateral - Plataforma de Membresia para Trading",
+    "general": "Plataforma web de membresia para educacion en trading, construida sobre WordPress con un plugin personalizado de membresia (Trading Lateral Membership). El sitio utiliza Elementor para el diseño visual, Contact Form 7 para formularios y esta optimizado con LiteSpeed Cache. Alojado en Hostinger con l",
+    "reto": "TradingLateral necesitaba una plataforma web con sistema de membresia para ofrecer contenido exclusivo de educacion en trading. Requerian un sistema de registro y acceso de usuarios, diseño profesional editable visualmente, formularios de contacto y un entorno de staging para pruebas antes de public",
+    "solucion": "Desarrolle la plataforma con WordPress y un plugin personalizado de membresia (Trading Lateral Membership) que gestiona el registro, acceso y niveles de usuario. Utilice Elementor como constructor de paginas para un diseño profesional y editable. Configure Contact Form 7 para formularios de contacto",
+    "techs_raw": "- WordPress 6.9.1 - Plugin personalizado Trading Lateral Membership - Elementor (constructor de paginas visual) - Contact Form 7 (formularios) - LiteSpeed Cache (rendimiento) - Tema TwentyTwentyFive -",
+    "images": [],
+    "image_count": 0
+  },
+  {
+    "slug": "wintennis",
+    "folder": "Wintennis",
+    "title": "Wintennis",
+    "general": "Wintennis es una web de contenido y recomendación de equipamiento de tenis. La plataforma ofrece guías comparativas de productos (raquetas, ropa, zapatillas, calcetines y accesorios), eventos del mundo del tenis, y selecciones editoriales de los mejores productos del año, ayudando a los jugadores a",
+    "reto": "El cliente quería crear una plataforma de contenido especializada en tenis que sirviera como referencia para jugadores que buscan equipamiento. Necesitaba un diseño atractivo con branding deportivo, secciones de contenido editorial con comparativas de productos, información sobre eventos tenísticos,",
+    "solucion": "Diseñé y desarrollé una web de contenido deportivo con enfoque editorial: - **Landing page** con hero visual impactante y claim \"La Mejor equipación de Tenis\" con CTA directo. - **Sección de eventos** próximos del mundo del tenis con imágenes y descripciones. - **Sección \"Explore The World\"** con co",
+    "techs_raw": "- WordPress (CMS) - Tema personalizado con branding deportivo - PHP / HTML5 / CSS3 - JavaScript - SEO on-page optimizado para contenido editorial - Diseño responsive",
+    "images": [
+      "/portfolio/Wintennis/1.png",
+      "/portfolio/Wintennis/2.png",
+      "/portfolio/Wintennis/3.png",
+      "/portfolio/Wintennis/4.png"
+    ],
+    "image_count": 4
+  },
+  {
+    "slug": "impakta-jugadores",
+    "folder": "impakta-jugadores",
+    "title": "Impakta Jugadores",
+    "general": "Plataforma SaaS completa de evaluacion de talento y rendimiento de equipos basada en la metodologia VISTA™. Permite a empresas, consultores y lideres de equipo evaluar a sus \"jugadores\" (empleados) en 6 dimensiones clave (Actitud, Objetivos, Compromiso, Efectividad, Valores y Resultados) mediante un",
+    "reto": "Impakta, una consultora de desarrollo organizacional, necesitaba digitalizar su metodologia propietaria VISTA™ de evaluacion de equipos. Hasta entonces, el proceso se realizaba de forma manual con hojas de calculo, lo que dificultaba el seguimiento historico, la generacion de informes y la escalabil",
+    "solucion": "Desarrolle una plataforma web completa con arquitectura multi-tenant desde el inicio. La jerarquia de datos sigue el modelo Empresa → Equipo → Jugador → Evaluacion, con control de acceso granular por roles (Global Admin, Consultor, Company Admin, Supervisor, Team Lead, Evaluador, Viewer). El sistema",
+    "techs_raw": "- Next.js 16 (App Router + Server Components) - React 19 - TypeScript - Prisma ORM + SQLite (desarrollo) / PostgreSQL (produccion) - NextAuth.js (autenticacion con roles) - Tailwind CSS - Recharts + C",
+    "images": [
+      "/portfolio/impakta-jugadores/1.png",
+      "/portfolio/impakta-jugadores/10.png",
+      "/portfolio/impakta-jugadores/11.png",
+      "/portfolio/impakta-jugadores/12.png",
+      "/portfolio/impakta-jugadores/13.png",
+      "/portfolio/impakta-jugadores/14.png"
+    ],
+    "image_count": 18
+  }
+]

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 
+import { Logo } from "@/components/ui/logo";
 import { Ripple } from "@/components/ui/ripple";
 import { RippleButton } from "@/components/ui/ripple-button";
 
@@ -21,9 +22,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 text-center">
         {/* Logo mobile — solo visible en mobile */}
         <div className="md:hidden text-center mb-6">
-          <span className="text-2xl font-bold tracking-tight text-white">
-            Garay<span className="text-[#4a64eb]">.</span>
-          </span>
+          <Logo size="lg" />
         </div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="flex justify-center mb-8">
@@ -58,7 +57,7 @@ piloto automático.
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="#contacto" className="w-full sm:w-auto">
+          <a href="/contacto" className="w-full sm:w-auto">
             <RippleButton rippleColor="#4a64eb" className="w-full sm:w-auto bg-[#4a64eb] text-white rounded-full px-7 py-3 border-0 font-medium hover:bg-[#5b75f0] hover:shadow-lg hover:shadow-[#4a64eb]/25">
               Reserva tu llamada
             </RippleButton>

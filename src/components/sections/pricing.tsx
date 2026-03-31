@@ -66,7 +66,7 @@ function PlanCard({ plan }: { plan: (typeof PLANES)[number] }) {
           </li>
         ))}
       </ul>
-      <a href="#contacto">
+      <a href="/contacto">
         <RippleButton
           rippleColor={plan.destacado ? "#4a64eb" : "#ffffff"}
           className={cn(

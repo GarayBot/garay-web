@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { icon: FolderOpen, href: "#casos", sectionId: "casos", label: "Casos" },
   { icon: Tag, href: "#proceso", sectionId: "proceso", label: "Proceso" },
   { icon: HelpCircle, href: "#faq", sectionId: "faq", label: "FAQ" },
-  { icon: Mail, href: "#contacto", sectionId: "contacto", label: "Contacto" },
+  { icon: Mail, href: "/contacto", sectionId: "contacto", label: "Contacto" },
 ];
 
 export function DockNav() {
