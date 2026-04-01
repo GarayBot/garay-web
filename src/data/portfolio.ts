@@ -115,8 +115,8 @@ export const PROJECTS: Project[] = [
     challenge: "El restaurante necesitaba un panel de administración interno para gestionar las operaciones diarias: seguimiento de clientes, gestión de pedidos, generación de facturas y monitorización de reseñas.",
     solution: "Implementé y personalicé el template premium Salero (Bootstrap 5) para crear un dashboard de administración adaptado al restaurante con módulos para gestión de interior, búsqueda, clientes y facturación.",
     tags: extractTags("- HTML5 + Bootstrap 5 - JavaScript + jQuery - Chart.js"),
-    images: ["/portfolio/Chefs/1.png", "/portfolio/Chefs/2.png", "/portfolio/Chefs/3.png", "/portfolio/Chefs/4.png", "/portfolio/Chefs/5.png", "/portfolio/Chefs/6.png", "/portfolio/Chefs/7.png", "/portfolio/Chefs/8.png", "/portfolio/Chefs/9.png", "/portfolio/Chefs/10.png", "/portfolio/Chefs/11.png"],
-    imageCount: 11,
+    images: Array.from({ length: 10 }, (_, i) => `/portfolio/Chefs/${i + 1}.png`),
+    imageCount: 10,
   },
   {
     slug: "coagrisan",
@@ -137,8 +137,8 @@ export const PROJECTS: Project[] = [
     challenge: "Los organizadores gestionaban las inscripciones y clasificaciones de la carrera de forma manual. Necesitaban una plataforma web donde los participantes pudieran inscribirse online.",
     solution: "Desarrollé una aplicación web custom en PHP con MySQL que gestiona el ciclo completo del evento deportivo con countdown, formulario de inscripción con validación de DNI y sistema de clasificaciones.",
     tags: extractTags("- PHP 7.3+ - MySQL/MariaDB - HTML5 + CSS3 + JavaScript"),
-    images: ["/portfolio/CursaBellvitge/1.png", "/portfolio/CursaBellvitge/2.png", "/portfolio/CursaBellvitge/3.png", "/portfolio/CursaBellvitge/4.png", "/portfolio/CursaBellvitge/5.png", "/portfolio/CursaBellvitge/6.png", "/portfolio/CursaBellvitge/7.png", "/portfolio/CursaBellvitge/8.png"],
-    imageCount: 8,
+    images: Array.from({ length: 7 }, (_, i) => `/portfolio/CursaBellvitge/${i + 1}.png`),
+    imageCount: 7,
   },
   {
     slug: "descaro",
@@ -324,8 +324,8 @@ export const PROJECTS: Project[] = [
     challenge: "MunDoctor necesitaba una plataforma donde los pacientes pudieran buscar profesionales de salud por especialidad, ubicación y valoración, y reservar citas online.",
     solution: "Desarrollé una plataforma SaaS con arquitectura multi-rol usando Clerk para autenticación, búsqueda avanzada con geolocalización y sistema de citas con verificación de disponibilidad en tiempo real vía Socket.io.",
     tags: extractTags("- React 18 + TypeScript + Vite - Tailwind CSS - Radix UI - Node.js 20 + Express.js - PostgreSQL - Stripe - Socket.io"),
-    images: Array.from({ length: 31 }, (_, i) => `/portfolio/Mundoctor/${i + 1}.png`),
-    imageCount: 31,
+    images: Array.from({ length: 16 }, (_, i) => `/portfolio/Mundoctor/${i + 1}.png`),
+    imageCount: 16,
   },
   {
     slug: "naturterapies",
@@ -379,8 +379,8 @@ export const PROJECTS: Project[] = [
     challenge: "Onplay necesitaba una plataforma que combinara la reserva de pistas deportivas con la grabación y visualización de partidos.",
     solution: "Desarrollé una SPA con React y Vite, utilizando Supabase como backend. El sistema de reservas incluye un calendario interactivo con selección de horarios.",
     tags: extractTags("- React 18 + Vite - Tailwind CSS + shadcn/ui + Radix UI - Supabase - Framer Motion"),
-    images: ["/portfolio/Onplay/1.png", "/portfolio/Onplay/2.png", "/portfolio/Onplay/3.png", "/portfolio/Onplay/4.png", "/portfolio/Onplay/5.png", "/portfolio/Onplay/6.png", "/portfolio/Onplay/7.png", "/portfolio/Onplay/8.png", "/portfolio/Onplay/9.png", "/portfolio/Onplay/10.png", "/portfolio/Onplay/11.png"],
-    imageCount: 11,
+    images: ["/portfolio/Onplay/1.png", "/portfolio/Onplay/2.png"],
+    imageCount: 2,
   },
   {
     slug: "osasuncbs",
@@ -467,8 +467,8 @@ export const PROJECTS: Project[] = [
     challenge: "Spikes, una empresa de intermediación energética, gestionaba sus contratos, leads y comisiones de agentes con herramientas dispersas (Excel, email, WhatsApp manual). Necesitaban centralizar todo el ciclo de ventas.",
     solution: "Desarrollé un sistema de 3 microservicios: frontend SPA con Next.js 14 como CRM visual, backend REST API con Express.js y TypeORM, y chatbot de WhatsApp con OpenAI para atención automatizada.",
     tags: extractTags("- Next.js 14 - React 18 + Tailwind CSS - Express.js - OpenAI - Docker"),
-    images: Array.from({ length: 39 }, (_, i) => `/portfolio/Spikes/${i + 1}.png`),
-    imageCount: 39,
+    images: Array.from({ length: 24 }, (_, i) => `/portfolio/Spikes/${i + 1}.png`),
+    imageCount: 24,
   },
   {
     slug: "sunoapp",
@@ -511,8 +511,8 @@ export const PROJECTS: Project[] = [
     challenge: "Impakta necesitaba digitalizar su metodología propietaria VISTA™ de evaluación de equipos. El proceso se realizaba manualmente con hojas de cálculo.",
     solution: "Desarrollé una plataforma web completa con arquitectura multi-tenant. La jerarquía de datos sigue Empresa → Equipo → Jugador → Evaluación, con control de acceso granular por roles.",
     tags: extractTags("- Next.js 16 - React 19 - TypeScript - Prisma ORM + SQLite - Tailwind CSS"),
-    images: Array.from({ length: 18 }, (_, i) => `/portfolio/impakta-jugadores/${i + 1}.png`),
-    imageCount: 18,
+    images: Array.from({ length: 15 }, (_, i) => `/portfolio/impakta-jugadores/${i + 1}.png`),
+    imageCount: 15,
   },
 ];
 

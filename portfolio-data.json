@@ -34,11 +34,11 @@
     "techs_raw": "- WordPress (CMS) - Tema Agrica v1.0.1 + Child Theme (tema premium agroindustrial) - Elementor + Elementor Pro (constructor de paginas) - WooCommerce (e-commerce) - Polylang + Connect Polylang Element",
     "images": [
       "/portfolio/Agro/1.png",
-      "/portfolio/Agro/10.png",
       "/portfolio/Agro/2.png",
       "/portfolio/Agro/3.png",
       "/portfolio/Agro/4.png",
-      "/portfolio/Agro/5.png"
+      "/portfolio/Agro/5.png",
+      "/portfolio/Agro/6.png"
     ],
     "image_count": 10
   },
@@ -63,11 +63,11 @@
     "techs_raw": "- React 18.2 + Vite - Tailwind CSS 3.3 + shadcn/ui + Radix UI - Supabase (PostgreSQL + autenticacion) - React Router DOM 6.16 (navegacion SPA) - React Hook Form 7.47 + Zod 3.22 (formularios y validaci",
     "images": [
       "/portfolio/AppBrokers/1.png",
-      "/portfolio/AppBrokers/10.png",
-      "/portfolio/AppBrokers/11.png",
       "/portfolio/AppBrokers/2.png",
       "/portfolio/AppBrokers/3.png",
-      "/portfolio/AppBrokers/4.png"
+      "/portfolio/AppBrokers/4.png",
+      "/portfolio/AppBrokers/5.png",
+      "/portfolio/AppBrokers/6.png"
     ],
     "image_count": 11
   },
@@ -110,13 +110,13 @@
     "techs_raw": "- HTML5 + Bootstrap 5 (dashboard admin) - JavaScript + jQuery (interactividad) - DataTables (tablas de datos) - Swiper.js (carruseles) - Bootstrap Datetimepicker (selector de fechas) - Chart.js / Apex",
     "images": [
       "/portfolio/Chefs/1.png",
-      "/portfolio/Chefs/10.png",
-      "/portfolio/Chefs/11.png",
       "/portfolio/Chefs/2.png",
       "/portfolio/Chefs/3.png",
-      "/portfolio/Chefs/4.png"
+      "/portfolio/Chefs/4.png",
+      "/portfolio/Chefs/5.png",
+      "/portfolio/Chefs/6.png"
     ],
-    "image_count": 11
+    "image_count": 10
   },
   {
     "slug": "coagrisan",
@@ -147,7 +147,7 @@
       "/portfolio/CursaBellvitge/5.png",
       "/portfolio/CursaBellvitge/6.png"
     ],
-    "image_count": 8
+    "image_count": 7
   },
   {
     "slug": "descaro",
@@ -377,13 +377,13 @@
     "techs_raw": "- React 18 + TypeScript + Vite - Tailwind CSS - Radix UI (componentes accesibles) - React Router (navegacion) - Socket.io Client (notificaciones en tiempo real) - Node.js 20 + Express.js - PostgreSQL",
     "images": [
       "/portfolio/Mundoctor/1.png",
-      "/portfolio/Mundoctor/10.png",
-      "/portfolio/Mundoctor/11.png",
-      "/portfolio/Mundoctor/12.png",
-      "/portfolio/Mundoctor/13.png",
-      "/portfolio/Mundoctor/14.png"
+      "/portfolio/Mundoctor/2.png",
+      "/portfolio/Mundoctor/3.png",
+      "/portfolio/Mundoctor/4.png",
+      "/portfolio/Mundoctor/5.png",
+      "/portfolio/Mundoctor/6.png"
     ],
-    "image_count": 31
+    "image_count": 16
   },
   {
     "slug": "naturterapies",
@@ -445,13 +445,9 @@
     "techs_raw": "- React 18 + Vite - Tailwind CSS + shadcn/ui + Radix UI - Supabase (PostgreSQL + autenticacion) - React Router v6 (navegacion SPA) - Framer Motion (animaciones) - Embla Carousel (galerias) - react-day",
     "images": [
       "/portfolio/Onplay/1.png",
-      "/portfolio/Onplay/10.png",
-      "/portfolio/Onplay/11.png",
-      "/portfolio/Onplay/2.png",
-      "/portfolio/Onplay/3.png",
-      "/portfolio/Onplay/4.png"
+      "/portfolio/Onplay/2.png"
     ],
-    "image_count": 11
+    "image_count": 2
   },
   {
     "slug": "osasuncbs",
@@ -497,11 +493,11 @@
     "techs_raw": "- Next.js 16 (App Router + Server Components) - React 19 + TypeScript - Supabase (Auth, PostgreSQL con RLS, Storage) - Tailwind CSS 4 + shadcn/ui - TanStack Table (tablas de datos avanzadas) - React H",
     "images": [
       "/portfolio/PecadoCarnal/1.png",
-      "/portfolio/PecadoCarnal/10.png",
-      "/portfolio/PecadoCarnal/11.png",
-      "/portfolio/PecadoCarnal/12.png",
-      "/portfolio/PecadoCarnal/13.png",
-      "/portfolio/PecadoCarnal/14.png"
+      "/portfolio/PecadoCarnal/2.png",
+      "/portfolio/PecadoCarnal/3.png",
+      "/portfolio/PecadoCarnal/4.png",
+      "/portfolio/PecadoCarnal/5.png",
+      "/portfolio/PecadoCarnal/6.png"
     ],
     "image_count": 20
   },
@@ -563,13 +559,13 @@
     "techs_raw": "- Next.js 14 (App Router) - React 18 + Tailwind CSS - JWT con jose (autenticacion) - @react-pdf/renderer + jsPDF (generacion PDF) - xlsx (exportacion Excel) - html2canvas (captura de pantalla para doc",
     "images": [
       "/portfolio/Spikes/1.png",
-      "/portfolio/Spikes/10.png",
-      "/portfolio/Spikes/11.png",
-      "/portfolio/Spikes/12.png",
-      "/portfolio/Spikes/13.png",
-      "/portfolio/Spikes/14.png"
+      "/portfolio/Spikes/2.png",
+      "/portfolio/Spikes/3.png",
+      "/portfolio/Spikes/4.png",
+      "/portfolio/Spikes/5.png",
+      "/portfolio/Spikes/6.png"
     ],
-    "image_count": 39
+    "image_count": 24
   },
   {
     "slug": "sunoapp",
@@ -621,12 +617,12 @@
     "techs_raw": "- Next.js 16 (App Router + Server Components) - React 19 - TypeScript - Prisma ORM + SQLite (desarrollo) / PostgreSQL (produccion) - NextAuth.js (autenticacion con roles) - Tailwind CSS - Recharts + C",
     "images": [
       "/portfolio/impakta-jugadores/1.png",
-      "/portfolio/impakta-jugadores/10.png",
-      "/portfolio/impakta-jugadores/11.png",
-      "/portfolio/impakta-jugadores/12.png",
-      "/portfolio/impakta-jugadores/13.png",
-      "/portfolio/impakta-jugadores/14.png"
+      "/portfolio/impakta-jugadores/2.png",
+      "/portfolio/impakta-jugadores/3.png",
+      "/portfolio/impakta-jugadores/4.png",
+      "/portfolio/impakta-jugadores/5.png",
+      "/portfolio/impakta-jugadores/6.png"
     ],
-    "image_count": 18
+    "image_count": 15
   }
 ]
