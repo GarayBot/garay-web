@@ -37,8 +37,8 @@ const FAQ_DATA = [
     a: "Por supuesto. En nuestra sección de Casos de Éxito puedes ver proyectos como el CRM de Spikes Energía, el chatbot de Luzia o la plataforma Impakta. También podemos mostrarte más ejemplos en la consulta inicial.",
   },
   {
-    q: "¿Por qué elegirte a ti y no a una agencia?",
-    a: "Porque hablas directamente conmigo — el que diseña, desarrolla y despliega. Sin comerciales, sin intermediarios. Más rápido, más barato y con mejor comunicación.",
+    q: "¿Por qué Garay y no una agencia grande?",
+    a: "Porque hablas directamente con nuestro equipo técnico — diseñamos, desarrollamos y desplegamos todo internamente. Sin comerciales, sin intermediarios. Más rápido, más barato y con mejor comunicación que una agencia grande.",
   },
   {
     q: "¿Qué pasa si no me gusta el resultado?",
@@ -54,7 +54,7 @@ const FAQ_DATA = [
   },
   {
     q: "¿Qué pasa si mi web actual no vende?",
-    a: "Es más común de lo que crees. Hacemos una auditoría gratuita en la consulta y te digo exactamente qué está fallando y cómo solucionarlo.",
+    a: "Es más común de lo que crees. Hacemos una auditoría gratuita en la consulta y te decimos exactamente qué está fallando y cómo solucionarlo.",
   },
 ];
 

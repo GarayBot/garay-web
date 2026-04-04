@@ -54,7 +54,7 @@ const SERVICIOS = [
   {
     Icon: Rocket,
     name: "Soporte Continuo",
-    description: "Tu departamento técnico sin contratar. Mantenimiento, actualizaciones y nuevas funcionalidades. Respondo en horas.",
+    description: "Tu departamento técnico sin contratar. Mantenimiento, actualizaciones y nuevas funcionalidades. Respondemos en horas.",
     href: "/contacto",
     cta: "Saber más",
     className: "col-span-1 lg:col-span-1",

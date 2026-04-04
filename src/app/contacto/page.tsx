@@ -150,7 +150,7 @@ export default function ContactoPage() {
           </BlurFade>
           <BlurFade delay={0.25} inView>
             <p className="mt-4 text-lg text-[#777788] max-w-2xl">
-              Cuéntame qué necesitas. Respondo en menos de 24h con un análisis gratuito y una propuesta clara.
+              Cuéntanos qué necesitas. Respondemos en menos de 24h con un análisis gratuito y una propuesta clara.
             </p>
           </BlurFade>
         </div>
@@ -224,7 +224,7 @@ export default function ContactoPage() {
                     >
                       hola@garay.es
                     </a>{" "}
-                    y te respondo en menos de 24h.
+                    y te respondemos en menos de 24h.
                   </p>
                 </div>
               </div>

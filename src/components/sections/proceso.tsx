@@ -11,7 +11,7 @@ const PASOS = [
   {
     num: "1",
     titulo: "Consulta estratégica",
-    desc: "Nos sentamos 30 minutos. Me cuentas qué problema quieres resolver. Yo te digo exactamente cómo lo haría y cuánto cuesta. Sin compromiso.",
+    desc: "Nos sentamos 30 minutos. Nos cuentas qué problema quieres resolver. Te decimos exactamente cómo lo haríamos y cuánto cuesta. Sin compromiso.",
     image: "/proceso/paso-1.webp",
   },
   {

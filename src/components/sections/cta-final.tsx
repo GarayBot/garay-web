@@ -23,7 +23,7 @@ export function CTAFinal() {
           href="#reservar"
           className="inline-flex w-full sm:w-auto justify-center rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-black transition-all hover:bg-gray-100 hover:shadow-lg hover:shadow-white/20"
         >
-          Reservar mi consulta gratis
+          Reservar consulta gratis
         </a>
       </motion.div>
     </section>
