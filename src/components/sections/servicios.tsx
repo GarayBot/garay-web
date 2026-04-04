@@ -18,7 +18,7 @@ const SERVICIOS = [
   {
     Icon: Cog,
     name: "Apps a Medida",
-    description: "Dashboards, CRMs, plataformas de formación, sistemas de reservas. Construido exactamente como lo necesitas.",
+    description: "Dashboards, CRMs, plataformas de formación, sistemas de reservas. Construido exactamente como lo necesitas, por nuestro equipo.",
     href: "/contacto",
     cta: "Saber más",
     className: "col-span-1 lg:col-span-2",

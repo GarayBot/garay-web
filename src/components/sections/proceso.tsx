@@ -17,7 +17,7 @@ const PASOS = [
   {
     num: "2",
     titulo: "Diseño",
-    desc: "Diseño la solución completa antes de escribir una línea de código. Ves wireframes y la arquitectura técnica. Apruebas todo antes de empezar.",
+    desc: "Diseñamos la solución completa antes de escribir una línea de código. Ves wireframes y la arquitectura técnica. Apruebas todo antes de que arranquemos.",
     image: "/proceso/paso-2.webp",
   },
   {
@@ -29,7 +29,7 @@ const PASOS = [
   {
     num: "4",
     titulo: "Lanzamiento",
-    desc: "Tu proyecto en producción, optimizado y monitorizado. No te dejo solo — me quedo para asegurar que todo funciona perfecto.",
+    desc: "Tu proyecto en producción, optimizado y monitorizado. No te dejamos solo — nos quedamos para asegurar que todo funciona perfecto.",
     image: "/proceso/paso-4.webp",
   },
 ];
