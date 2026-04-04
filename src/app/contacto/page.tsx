@@ -145,13 +145,12 @@ export default function ContactoPage() {
           </BlurFade>
           <BlurFade delay={0.2} inView>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-              Hablemos de tu proyecto
+              ¿Prefieres escribirme directamente?
             </h1>
           </BlurFade>
           <BlurFade delay={0.25} inView>
             <p className="mt-4 text-lg text-[#777788] max-w-2xl">
-              Cuéntanos qué necesitas y te responderemos en menos de 24 horas
-              con una propuesta personalizada.
+              Cuéntame qué necesitas. Respondo en menos de 24h con un análisis gratuito y una propuesta clara.
             </p>
           </BlurFade>
         </div>

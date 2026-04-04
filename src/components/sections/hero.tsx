@@ -37,8 +37,8 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
         >
-          Haz crecer tu negocio,{" "}
-          <span className="bg-gradient-to-r from-[#6d86f5] to-[#5b75f0] bg-clip-text text-transparent">no tu nómina.</span>
+          Tu web no vende.{" "}
+          <span className="bg-gradient-to-r from-[#6d86f5] to-[#5b75f0] bg-clip-text text-transparent">La nuestra sí.</span>
         </motion.h1>
 
         <motion.p
@@ -47,8 +47,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-6 text-base md:text-lg text-[#9999aa] max-w-2xl mx-auto leading-relaxed"
         >
-          El camino a 6 cifras empieza con una web profesional, automatización inteligente y el trabajo diario en{" "}
-piloto automático.
+          Diseñamos webs que convierten visitas en clientes, apps que automatizan tu negocio, y soluciones con IA que te ahorran +20 horas a la semana.
         </motion.p>
 
         <motion.div
@@ -57,14 +56,14 @@ piloto automático.
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="/contacto" className="w-full sm:w-auto">
+          <a href="#reservar" className="w-full sm:w-auto">
             <RippleButton rippleColor="#4a64eb" className="w-full sm:w-auto bg-[#4a64eb] text-white rounded-full px-7 py-3 border-0 font-medium hover:bg-[#5b75f0] hover:shadow-lg hover:shadow-[#4a64eb]/25">
-              Reserva tu llamada
+              Agenda tu consulta gratis
             </RippleButton>
           </a>
-          <a href="#servicios" className="w-full sm:w-auto">
+          <a href="#casos" className="w-full sm:w-auto">
             <RippleButton rippleColor="#fff" className="w-full sm:w-auto border border-[#3a3a4a] text-white rounded-full px-7 py-3 bg-transparent font-medium hover:bg-white/5 hover:border-[#555]">
-              Ver servicios
+              Ver casos de éxito
             </RippleButton>
           </a>
         </motion.div>
@@ -103,7 +102,7 @@ piloto automático.
               <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
             ))}
           </div>
-          <p className="text-sm text-[#777788]">Más de 50 proyectos entregados con éxito</p>
+          <p className="text-sm text-[#777788]">+50 empresas confían en nosotros</p>
         </motion.div>
 
         {/* Hero Video Dialog */}

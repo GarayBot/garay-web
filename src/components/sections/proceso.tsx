@@ -11,25 +11,25 @@ const PASOS = [
   {
     num: "1",
     titulo: "Consulta estratégica",
-    desc: "Nos reunimos para hablar de tus objetivos y retos. Identificamos los sistemas de mayor impacto y creamos tu plan personalizado.",
+    desc: "Nos sentamos 30 minutos. Me cuentas qué problema quieres resolver. Yo te digo exactamente cómo lo haría y cuánto cuesta. Sin compromiso.",
     image: "/proceso/paso-1.webp",
   },
   {
     num: "2",
-    titulo: "Plan personalizado",
-    desc: "Recibes un roadmap detallado: qué implementar primero, ROI esperado y calendario de cada fase del proyecto.",
+    titulo: "Diseño",
+    desc: "Diseño la solución completa antes de escribir una línea de código. Ves wireframes y la arquitectura técnica. Apruebas todo antes de empezar.",
     image: "/proceso/paso-2.webp",
   },
   {
     num: "3",
-    titulo: "Arranque inmediato",
-    desc: "Una vez aprobado el plan, empezamos en 24 horas. Sin retrasos, sin excusas — implementación directa y comunicación constante.",
+    titulo: "Desarrollo",
+    desc: "Desarrollo iterativo con entregas semanales. Cada viernes ves avances reales funcionando — no mockups. Si algo no te convence, lo ajustamos al momento.",
     image: "/proceso/paso-3.webp",
   },
   {
     num: "4",
-    titulo: "Escalar y optimizar",
-    desc: "A medida que los sistemas dan resultados, optimizamos y expandimos para conseguir crecimiento compuesto.",
+    titulo: "Lanzamiento",
+    desc: "Tu proyecto en producción, optimizado y monitorizado. No te dejo solo — me quedo para asegurar que todo funciona perfecto.",
     image: "/proceso/paso-4.webp",
   },
 ];
@@ -82,11 +82,10 @@ export function Proceso() {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Así conseguimos resultados
+            De tu idea a resultados en 4 semanas
           </h2>
           <p className="mt-3 text-[#888899] max-w-lg mx-auto">
-            Nuestro proceso probado en 4 pasos para identificar oportunidades y
-            entregar ROI inmediato.
+            Un proceso claro, sin sorpresas, enfocado en resultados.
           </p>
         </motion.div>
 

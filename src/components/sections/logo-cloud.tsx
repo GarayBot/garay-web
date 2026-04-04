@@ -2,13 +2,13 @@
 
 import { ScrollVelocityContainer, ScrollVelocityRow } from "@/components/ui/scroll-based-velocity";
 
-const CLIENTS = ["Spikes Energía", "TradingLateral", "Impakta", "PecadoCarnal", "HomeFit22", "Aqualinks", "HabitRank", "MedicalTrends", "Luzia"];
+const CLIENTS = ["Spikes Energía", "TradingLateral", "Impakta", "PecadoCarnal", "HomeFit22", "Aqualinks", "HabitRank", "Clínica Somrís", "MedicalTrends", "Luzia"];
 
 export function LogoCloud() {
   return (
     <section className="py-16">
       <p className="text-center text-xs font-medium uppercase tracking-[3px] text-[#666677] mb-8">
-        Confían en nosotros
++50 empresas ya confían en nosotros
       </p>
       <div className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0f1117] to-transparent z-10" />

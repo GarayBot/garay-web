@@ -14,8 +14,8 @@ const FAQ_DATA = [
     a: "Desarrollamos desde landing pages y webs corporativas hasta plataformas SaaS complejas, e-commerce, CRMs a medida y aplicaciones web con Next.js, React y Node.js. Cada proyecto se adapta 100% a las necesidades del negocio.",
   },
   {
-    q: "¿Cuánto cuesta un proyecto de desarrollo web?",
-    a: "Depende de la complejidad. Una landing page puede partir de 1.500€ y un proyecto SaaS completo desde 5.000€. Ofrecemos presupuesto cerrado sin sorpresas tras la consulta estratégica inicial gratuita.",
+    q: "¿Cuánto cuesta un proyecto?",
+    a: "Una web profesional desde 1.500€. Apps a medida entre 3.000€-10.000€. Siempre presupuesto cerrado antes de empezar — sin sorpresas. La consulta inicial es gratis.",
   },  {
     q: "¿Cuánto tiempo tarda un proyecto en estar listo?",
     a: "Una landing page puede estar lista en 1-2 semanas. Proyectos más complejos como CRMs o plataformas suelen tardar entre 4 y 8 semanas. Siempre damos plazos realistas y los cumplimos.",
@@ -37,8 +37,8 @@ const FAQ_DATA = [
     a: "Por supuesto. En nuestra sección de Casos de Éxito puedes ver proyectos como el CRM de Spikes Energía, el chatbot de Luzia o la plataforma Impakta. También podemos mostrarte más ejemplos en la consulta inicial.",
   },
   {
-    q: "¿Trabajáis solo con empresas de Barcelona?",
-    a: "No, trabajamos con empresas de toda España y también a nivel internacional. Todo nuestro proceso es 100% remoto, con videollamadas y herramientas de gestión que permiten colaborar desde cualquier lugar.",
+    q: "¿Por qué elegirte a ti y no a una agencia?",
+    a: "Porque hablas directamente conmigo — el que diseña, desarrolla y despliega. Sin comerciales, sin intermediarios. Más rápido, más barato y con mejor comunicación.",
   },
   {
     q: "¿Qué pasa si no me gusta el resultado?",
@@ -51,6 +51,10 @@ const FAQ_DATA = [
   {
     q: "¿Ofrecéis diseño UX/UI además de desarrollo?",
     a: "Sí, cada proyecto incluye diseño UX/UI profesional. Creamos interfaces modernas, intuitivas y optimizadas para conversión. No necesitas contratar un diseñador aparte.",
+  },
+  {
+    q: "¿Qué pasa si mi web actual no vende?",
+    a: "Es más común de lo que crees. Hacemos una auditoría gratuita en la consulta y te digo exactamente qué está fallando y cómo solucionarlo.",
   },
 ];
 
