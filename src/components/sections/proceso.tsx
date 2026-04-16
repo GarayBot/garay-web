@@ -23,7 +23,7 @@ const PASOS = [
   {
     num: "3",
     titulo: "Desarrollo",
-    desc: "Desarrollo iterativo con entregas semanales. Cada viernes ves avances reales funcionando — no mockups. Si algo no te convence, lo ajustamos al momento.",
+    desc: "Desarrollamos de forma iterativa con entregas semanales. Cada viernes ves avances reales funcionando — no mockups. Si algo no te convence, lo ajustamos al momento.",
     image: "/proceso/paso-3.webp",
   },
   {

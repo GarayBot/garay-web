@@ -145,7 +145,7 @@ export default function ContactoPage() {
           </BlurFade>
           <BlurFade delay={0.2} inView>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-              ¿Prefieres escribirme directamente?
+              ¿Prefieres escribirnos directamente?
             </h1>
           </BlurFade>
           <BlurFade delay={0.25} inView>
