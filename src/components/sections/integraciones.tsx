@@ -50,7 +50,7 @@ export function Integraciones() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6">Tecnologías</span>
+          <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Tecnologías</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
             Utilizamos las{" "}
             <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">últimas tecnologías</span>
