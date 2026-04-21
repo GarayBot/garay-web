@@ -64,8 +64,10 @@ export function Hero() {
             </RippleButton>
           </a>
           <a href="#casos" className="w-full sm:w-auto">
-            <RippleButton rippleColor="#fff" className="w-full sm:w-auto border border-[#3a3a4a] text-white rounded-full px-7 py-3 bg-transparent font-medium hover:bg-white/5 hover:border-[#555]">
-              Ver casos de éxito
+            <RippleButton rippleColor="#fff" className="w-full sm:w-auto border border-white/[0.08] text-white rounded-full px-7 py-3 bg-white/[0.03] backdrop-blur-xl font-medium hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-500 relative overflow-hidden group">
+              <span className="relative z-10">Ver casos de éxito</span>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] via-transparent to-white/[0.01] pointer-events-none" />
+              <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/[0.03] rounded-full blur-2xl pointer-events-none group-hover:bg-white/[0.05] transition-colors duration-500" />
             </RippleButton>
           </a>
         </motion.div>

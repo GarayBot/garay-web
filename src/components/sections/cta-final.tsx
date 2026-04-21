@@ -13,7 +13,7 @@ export function CTAFinal() {
         className="mx-auto max-w-4xl rounded-3xl bg-gradient-to-br from-[#1a2a6c] via-[#4a64eb] to-[#2d3a8c] p-8 md:p-12 lg:p-16 text-center"
       >
         <p className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90 mb-6">Plazas limitadas</p>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6">
           Hagamos que tu negocio crezca
         </h2>
         <p className="mb-8 text-white/80 text-sm max-w-lg mx-auto">

@@ -41,7 +41,7 @@ export function TestimoniosLong() {
       <div className="mx-auto max-w-6xl mb-12 text-center px-4 md:px-6">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Testimonios</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6">
             Resultados reales, no promesas
           </h2>
           <p className="mt-3 text-[#888899] max-w-2xl mx-auto">Descubre cómo empresas están transformando sus operaciones con nuestras soluciones.</p>

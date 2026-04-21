@@ -30,7 +30,7 @@ export function CalSection() {
           className="text-center mb-10"
         >
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Contacto</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6">
             Reserva tu consulta estratégica gratuita
           </h2>
           <p className="mt-3 text-[#888899] max-w-2xl mx-auto">

@@ -41,7 +41,7 @@ export function TestimoniosShort() {
     <section className="py-20 px-4 md:px-6">
       <div className="mx-auto max-w-6xl mb-12 text-center">
         <BlurFade delay={0.1} inView>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Resultados reales, no promesas</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Resultados reales, no promesas</h2>
           <p className="mt-3 text-[#888899]">Empresas reales que han escalado sus operaciones con nuestras soluciones.</p>
         </BlurFade>
       </div>

@@ -125,7 +125,7 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl text-center">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Precios</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6">
             Planes que se adaptan a tu negocio
           </h2>
           <p className="text-[#888899] text-center max-w-2xl mx-auto mb-12">

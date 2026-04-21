@@ -70,7 +70,7 @@ export function Servicios() {
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={0.1} inView>
           <p className="text-sm font-mono uppercase tracking-[0.2em] text-[#6d86f5] mb-3 text-center">Nuestros Servicios</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-4">Soluciones que hacen crecer tu negocio</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-center mb-4">Soluciones que hacen crecer tu negocio</h2>
           <p className="text-[#888899] text-center max-w-2xl mx-auto mb-14">Cada proyecto es único. Sin plantillas, sin atajos, sin intermediarios.</p>
         </BlurFade>
 
