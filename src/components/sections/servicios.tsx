@@ -5,6 +5,8 @@ import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Globe, Bot, Cog, ShoppingCart, Link, Rocket } from "lucide-react";
 
+import { SectionGlow } from "@/components/ui/section-glow";
+
 const SERVICIOS = [
   {
     Icon: Globe,
@@ -64,7 +66,7 @@ const SERVICIOS = [
 
 export function Servicios() {
   return (
-    <section id="servicios" className="py-24 px-4 md:px-6">
+    <SectionGlow className="py-24 px-4 md:px-6" glowColor="rgba(74, 100, 235, 0.08)">
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={0.1} inView>
           <p className="text-sm font-mono uppercase tracking-[0.2em] text-[#6d86f5] mb-3 text-center">Nuestros Servicios</p>
@@ -80,6 +82,6 @@ export function Servicios() {
           </BentoGrid>
         </BlurFade>
       </div>
-    </section>
+    </SectionGlow>
   );
 }

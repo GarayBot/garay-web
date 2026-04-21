@@ -38,61 +38,83 @@ const BONUSES = [
 ];
 
 function PlanCard({ plan }: { plan: (typeof PLANES)[number] }) {
-  const content = (
-    <div className="p-6 md:p-8 flex flex-col h-full">
-      {plan.destacado && (
-        <span className="self-start text-[11px] font-mono uppercase tracking-wider px-3 py-1 bg-[#4a64eb] text-white rounded-full font-semibold mb-4">
-          Más popular
-        </span>
-      )}
-      <h3 className="text-xl font-bold text-white">{plan.nombre}</h3>
-      <p className="text-sm text-[#9ca3af] mt-1">{plan.desc}</p>
-      <div className="mt-5 mb-6">
-        <span className="text-xs text-[#6b7280] uppercase font-mono tracking-wider">desde</span>
-        <div className="mt-1">
-          <span className={cn(
-            "text-4xl font-bold",
-            plan.destacado ? "text-[#4a64eb]" : "text-white"
-          )}>
-            {plan.precio}€
-          </span>
-        </div>
-      </div>
-      <ul className="space-y-3 mb-8 flex-1">
-        {plan.features.map((f) => (
-          <li key={f} className="text-sm text-[#9ca3af] flex items-center gap-2.5">
-            <Check className="h-4 w-4 text-[#4a64eb] flex-shrink-0" />
-            {f}
-          </li>
-        ))}
-      </ul>
-      <a href="/contacto">
-        <RippleButton
-          rippleColor={plan.destacado ? "#4a64eb" : "#ffffff"}
-          className={cn(
-            "w-full py-2.5 rounded-full text-sm font-medium",
-            plan.destacado
-              ? "bg-[#4a64eb] text-white border-0 hover:bg-[#5b75f0]"
-              : "bg-transparent text-white border border-[#2a2d3a] hover:bg-white/5"
-          )}
-        >
-          Empezar proyecto
-        </RippleButton>
-      </a>
-    </div>
-  );
-
-  if (plan.destacado) {
-    return (
-      <div className="rounded-2xl border border-[#4a64eb]/50 bg-[#1a1a24] h-full shadow-lg shadow-[#4a64eb]/10">
-        {content}
-      </div>
-    );
-  }
-
   return (
-    <div className="rounded-2xl border border-[#2a2d3a] bg-[#1a1a24] h-full hover:border-[#3a3d4a] transition-colors">
-      {content}
+    <div className={cn(
+      "rounded-2xl border h-full transition-all duration-500 relative overflow-hidden group flex flex-col",
+      plan.destacado 
+        ? "border-[#4a64eb]/30 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_40px_-15px_rgba(74,100,235,0.3)] hover:shadow-[0_0_60px_-10px_rgba(74,100,235,0.4)]"
+        : "border-white/[0.08] bg-white/[0.02] backdrop-blur-xl hover:bg-white/[0.04] hover:border-white/[0.12]"
+    )}>
+      {/* Glow effect */}
+      <div className={cn(
+        "absolute inset-0 pointer-events-none",
+        plan.destacado 
+          ? "bg-gradient-to-br from-[#4a64eb]/10 via-transparent to-[#4a64eb]/5"
+          : "bg-gradient-to-br from-white/[0.02] via-transparent to-white/[0.01]"
+      )} />
+      <div className={cn(
+        "absolute -top-24 -right-24 w-48 h-48 rounded-full blur-3xl pointer-events-none transition-colors duration-500",
+        plan.destacado 
+          ? "bg-[#4a64eb]/20 group-hover:bg-[#4a64eb]/30"
+          : "bg-white/[0.03] group-hover:bg-white/[0.05]"
+      )} />
+      
+      <div className="relative z-10 p-6 md:p-8 flex flex-col h-full">
+        {/* Badge centrado arriba */}
+        <div className="flex justify-center mb-6">
+          {plan.destacado ? (
+            <span className="text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 bg-[#4a64eb] text-white rounded-full font-semibold">
+              Más popular
+            </span>
+          ) : (
+            <span className="text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 text-transparent">
+              .
+            </span>
+          )}
+        </div>
+        
+        {/* Nombre del plan - más grande */}
+        <h3 className="text-2xl md:text-3xl font-bold text-white text-center">{plan.nombre}</h3>
+        <p className="text-base text-[#9ca3af] mt-2 text-center">{plan.desc}</p>
+        
+        {/* Precio - más grande */}
+        <div className="mt-6 mb-8 text-center">
+          <span className="text-sm text-[#6b7280] uppercase font-mono tracking-wider">desde</span>
+          <div className="mt-2">
+            <span className={cn(
+              "text-5xl md:text-6xl font-bold",
+              plan.destacado ? "text-[#4a64eb]" : "text-white"
+            )}>
+              {plan.precio}€
+            </span>
+          </div>
+        </div>
+        
+        {/* Features - espacio flexible */}
+        <ul className="space-y-4 mb-8 flex-1">
+          {plan.features.map((f) => (
+            <li key={f} className="text-base text-[#9ca3af] flex items-center gap-3">
+              <Check className="h-5 w-5 text-[#4a64eb] flex-shrink-0" />
+              {f}
+            </li>
+          ))}
+        </ul>
+        
+        {/* Botón siempre abajo */}
+        <a href="/contacto" className="mt-auto">
+          <RippleButton
+            rippleColor={plan.destacado ? "#4a64eb" : "#ffffff"}
+            className={cn(
+              "w-full py-3 rounded-full text-base font-medium",
+              plan.destacado
+                ? "bg-[#4a64eb] text-white border-0 hover:bg-[#5b75f0]"
+                : "bg-transparent text-white border border-[#2a2d3a] hover:bg-white/5"
+            )}
+          >
+            Empezar proyecto
+          </RippleButton>
+        </a>
+      </div>
     </div>
   );
 }

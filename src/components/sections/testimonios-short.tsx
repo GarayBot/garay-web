@@ -18,17 +18,20 @@ function ReviewCard({ img, name, username, body }: { img: string; name: string; 
   return (
     <figure className={cn(
       "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-      "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-      "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+      "border-white/[0.08] bg-white/[0.03] backdrop-blur-md",
+      "hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300"
     )}>
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">{name}</figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+      <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] via-transparent to-transparent pointer-events-none" />
+      <div className="relative z-10">
+        <div className="flex flex-row items-center gap-2">
+          <img className="rounded-full" width="32" height="32" alt="" src={img} />
+          <div className="flex flex-col">
+            <figcaption className="text-sm font-medium dark:text-white">{name}</figcaption>
+            <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          </div>
         </div>
+        <blockquote className="mt-2 text-sm">{body}</blockquote>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
   )
 }
@@ -38,7 +41,7 @@ export function TestimoniosShort() {
     <section className="py-20 px-4 md:px-6">
       <div className="mx-auto max-w-6xl mb-12 text-center">
         <BlurFade delay={0.1} inView>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Resultados reales, no promesas</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Resultados reales, no promesas</h2>
           <p className="mt-3 text-[#888899]">Empresas reales que han escalado sus operaciones con nuestras soluciones.</p>
         </BlurFade>
       </div>

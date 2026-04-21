@@ -139,14 +139,6 @@ export default function CustomCursor() {
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
-        @media (pointer: fine) {
-          html, body, * {
-            cursor: none !important;
-          }
-          a, button, [role="button"] {
-            cursor: none !important;
-          }
-        }
         @media screen and (max-width: 480px) {
           .custom-cursor { display: none !important; }
         }
