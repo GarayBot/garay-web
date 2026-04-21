@@ -8,22 +8,22 @@ import { cn } from "@/lib/utils";
 
 const PLANES = [
   {
-    nombre: "Express",
-    precio: "1.200",
+    nombre: "Landing",
+    precio: "990",
     desc: "Landing page profesional",
     features: ["Diseño responsive", "SEO básico", "Formulario de contacto", "Entrega en 7 días", "1 revisión incluida"],
     destacado: false,
   },
   {
     nombre: "Profesional",
-    precio: "2.500",
+    precio: "1.890",
     desc: "Web multi-página completa",
     features: ["Hasta 8 páginas", "CMS integrado", "Blog", "Analytics avanzados", "Formularios pro", "SEO completo", "3 revisiones incluidas"],
     destacado: true,
   },
   {
     nombre: "Plataforma",
-    precio: "5.000",
+    precio: "4.990",
     desc: "Aplicación web a medida",
     features: ["App web completa", "Panel de administración", "API REST", "Integraciones externas", "Base de datos", "Soporte 3 meses"],
     destacado: false,
@@ -80,13 +80,14 @@ function PlanCard({ plan }: { plan: (typeof PLANES)[number] }) {
         {/* Precio - más grande */}
         <div className="mt-6 mb-8 text-center">
           <span className="text-sm text-[#6b7280] uppercase font-mono tracking-wider">desde</span>
-          <div className="mt-2">
+          <div className="mt-2 flex items-baseline justify-center gap-2">
             <span className={cn(
               "text-5xl md:text-6xl font-bold",
               plan.destacado ? "text-[#4a64eb]" : "text-white"
             )}>
               {plan.precio}€
             </span>
+            <span className="text-sm text-[#6b7280]">+IVA</span>
           </div>
         </div>
         

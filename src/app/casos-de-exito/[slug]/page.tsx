@@ -33,10 +33,10 @@ export default async function CasoDetallePage({ params }: { params: Promise<{ sl
       {/* Header */}
       <section className="relative overflow-hidden pt-16 pb-8">
         <DotPattern
-          className="opacity-10 text-[#4a64eb]"
-          width={24}
-          height={24}
-          cr={0.8}
+          className="opacity-30 text-[#4a64eb]"
+          width={20}
+          height={20}
+          cr={1.2}
         />
         <div className="relative z-10 mx-auto max-w-4xl px-6">
           <BlurFade delay={0.05} inView>

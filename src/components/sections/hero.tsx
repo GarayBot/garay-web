@@ -7,6 +7,7 @@ import { Logo } from "@/components/ui/logo";
 import { Ripple } from "@/components/ui/ripple";
 import { RippleButton } from "@/components/ui/ripple-button";
 
+import { DotPattern } from "@/components/ui/dot-pattern";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -14,8 +15,17 @@ import { cn } from "@/lib/utils";
 export function Hero() {
   return (
     <section className="relative pt-8 md:pt-44 pb-20">
+      {/* DotPattern background - behind ripple */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <DotPattern
+          className="opacity-20 text-[#4a64eb]"
+          width={24}
+          height={24}
+          cr={1}
+        />
+      </div>
       {/* Ripple background — a la altura de los botones en desktop, más arriba en mobile */}
-      <div className="absolute inset-0 pointer-events-none -top-32 md:-top-[15%]">
+      <div className="absolute inset-0 pointer-events-none -top-32 md:-top-[15%] z-10">
         <Ripple mainCircleSize={150} numCircles={6} />
       </div>
 
