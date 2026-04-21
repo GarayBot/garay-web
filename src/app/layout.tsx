@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import CustomCursor from "@/components/custom-cursor";
 
 
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className="dark scroll-smooth" suppressHydrationWarning>
       <body className={`${GeistSans.className} bg-[#0f1117] text-white antialiased overflow-x-clip`}>
+        <CustomCursor />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

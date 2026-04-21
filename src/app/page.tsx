@@ -1,6 +1,5 @@
 import { PropuestaServicios } from "@/components/propuesta/servicios-3d";
 import { PropuestaProceso } from "@/components/propuesta/proceso-3d";
-import { FloatingParticles } from "@/components/propuesta/floating-particles";
 import { Header } from "@/components/sections/header";
 import { DockNav } from "@/components/sections/dock-nav";
 import { Hero } from "@/components/sections/hero";
@@ -21,7 +20,6 @@ import { Footer } from "@/components/sections/footer";
 export default function Home() {
   return (
     <main className="relative bg-[#0a0a0f] text-white overflow-x-clip">
-      <FloatingParticles />
       <Header />
       <DockNav />
       <Hero />
