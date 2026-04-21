@@ -41,16 +41,14 @@ export function TestimoniosLong() {
       <div className="mx-auto max-w-6xl mb-12 text-center px-4 md:px-6">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Testimonios</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
-            Resultados{" "}
-            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">reales</span>
-            , no promesas
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+            Resultados reales, no promesas
           </h2>
           <p className="mt-3 text-[#888899] max-w-2xl mx-auto">Descubre cómo empresas están transformando sus operaciones con nuestras soluciones.</p>
         </BlurFade>
       </div>
 
-      <div className="relative flex h-[400px] md:h-[450px] w-full mx-auto max-w-6xl flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] px-4 md:px-6">
+      <div className="relative flex h-[500px] md:h-[600px] w-full flex-row items-center justify-center gap-4 overflow-hidden [perspective:300px] px-4 md:px-6">
         <div
           className="flex flex-row items-center gap-4"
           style={{
@@ -74,10 +72,10 @@ export function TestimoniosLong() {
           </Marquee>
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#0f1117]" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#0f1117]" />
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#0f1117]" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#0f1117]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#0a0a0f]" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#0a0a0f]" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#0a0a0f]" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#0a0a0f]" />
       </div>
     </section>
   )

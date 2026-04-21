@@ -31,7 +31,7 @@ export function FloatingParticles() {
 
     const createParticles = () => {
       particles = [];
-      const count = Math.floor((canvas.width * canvas.height) / 25000);
+      const count = Math.floor((canvas.width * canvas.height) / 15000);
       
       for (let i = 0; i < count; i++) {
         particles.push({
@@ -39,8 +39,8 @@ export function FloatingParticles() {
           y: Math.random() * canvas.height,
           vx: (Math.random() - 0.5) * 0.3,
           vy: (Math.random() - 0.5) * 0.3,
-          size: Math.random() * 2 + 0.5,
-          opacity: Math.random() * 0.5 + 0.1,
+          size: Math.random() * 3 + 1,
+          opacity: Math.random() * 0.8 + 0.2,
         });
       }
     };
@@ -66,12 +66,12 @@ export function FloatingParticles() {
           const dy = particles[j].y - particle.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 120) {
+          if (dist < 150) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(74, 100, 235, ${0.1 * (1 - dist / 120)})`;
-            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = `rgba(74, 100, 235, ${0.2 * (1 - dist / 150)})`;
+            ctx.lineWidth = 1;
             ctx.stroke();
           }
         }
@@ -99,7 +99,7 @@ export function FloatingParticles() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ opacity: 0.6 }}
+      style={{ opacity: 0.8 }}
     />
   );
 }

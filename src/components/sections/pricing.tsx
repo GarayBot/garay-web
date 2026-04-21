@@ -100,12 +100,11 @@ function PlanCard({ plan }: { plan: (typeof PLANES)[number] }) {
 export function Pricing() {
   return (
     <section id="pricing" className="py-16 md:py-24 px-4 md:px-6">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl text-center">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Precios</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-4">
-            Planes que se adaptan{" "}
-            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">a tu negocio</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+            Planes que se adaptan a tu negocio
           </h2>
           <p className="text-[#888899] text-center max-w-2xl mx-auto mb-12">
             Sin sorpresas, sin letra pequeña. Elige el plan que mejor se adapte y empieza hoy.

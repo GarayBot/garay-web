@@ -202,10 +202,8 @@ function DesktopCarousel() {
         <div className="px-6 lg:px-8 mb-8">
           <div className="mx-auto max-w-6xl">
             <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Casos de Éxito</span>
-            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">
-            Resultados{" "}
-            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">reales</span>{" "}
-            de empresas reales
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+            Resultados reales de empresas reales
           </h2>
           </div>
         </div>
@@ -255,10 +253,8 @@ export function CasosExito() {
       <section id="casos" className="py-16 px-4">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Casos de Éxito</span>
-          <h2 className="text-2xl font-bold tracking-tight mb-8">
-            Resultados{" "}
-            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">reales</span>{" "}
-            de empresas reales
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+            Resultados reales de empresas reales
           </h2>
         </BlurFade>
         <div className="flex flex-col gap-4">

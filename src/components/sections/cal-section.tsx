@@ -30,9 +30,8 @@ export function CalSection() {
           className="text-center mb-10"
         >
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Contacto</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
-            Reserva tu{" "}
-            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">consulta estratégica gratuita</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+            Reserva tu consulta estratégica gratuita
           </h2>
           <p className="mt-3 text-[#888899] max-w-2xl mx-auto">
             Agenda una videollamada de 30 minutos para analizar tu negocio y descubrir oportunidades de crecimiento.

@@ -13,9 +13,8 @@ export function CTAFinal() {
         className="mx-auto max-w-4xl rounded-3xl bg-gradient-to-br from-[#1a2a6c] via-[#4a64eb] to-[#2d3a8c] p-8 md:p-12 lg:p-16 text-center"
       >
         <p className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90 mb-6">Plazas limitadas</p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-          Hagamos que tu negocio{" "}
-          <span className="bg-gradient-to-r from-white via-white/90 to-white/60 bg-clip-text text-transparent">crezca</span>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+          Hagamos que tu negocio crezca
         </h2>
         <p className="mb-8 text-white/80 text-sm max-w-lg mx-auto">
           Más de 50 empresas ya confían en nosotros. El siguiente paso es una conversación de 30 minutos. Sin compromiso.
