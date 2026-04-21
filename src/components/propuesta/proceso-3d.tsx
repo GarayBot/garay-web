@@ -81,7 +81,7 @@ export function PropuestaProceso() {
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative max-w-3xl mx-auto md:max-w-5xl">
+        <div className="relative">
           {/* Línea vertical animada — centrada en md+, a la izquierda en móvil */}
           <div className="absolute left-7 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-[#2a2d3a]">
             <motion.div 
@@ -98,33 +98,40 @@ export function PropuestaProceso() {
               return (
                 <motion.div
                   key={paso.num}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, delay: i * 0.15 }}
-                  className="relative flex flex-row md:items-start gap-4 md:gap-8"
                 >
-                  {/* Timeline dot + icon wrapper — fixed on left, centered on md+ */}
-                  <div className="relative z-10 flex-shrink-0 w-14 md:w-auto md:flex md:justify-center">
-                    {/* Mobile: dot alineado con la línea */}
-                    <div className="md:hidden">
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        animate={isInView ? { scale: 1 } : {}}
-                        transition={{ duration: 0.5, delay: i * 0.15 + 0.3 }}
-                        className="w-14 h-14 rounded-full border-2 flex items-center justify-center bg-[#0a0a0f]"
-                        style={{ 
-                          borderColor: paso.color,
-                          boxShadow: `0 0 20px ${paso.color}30`,
-                        }}
-                      >
-                        <span className="text-base font-bold" style={{ color: paso.color }}>
-                          {paso.num}
-                        </span>
-                      </motion.div>
+                  {/* Desktop: 3-column layout */}
+                  <div className="hidden md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 md:items-start">
+                    {/* Left column */}
+                    <div className={`${isEven ? "text-right pr-4" : "opacity-0 pointer-events-none"}`}>
+                      {isEven && (
+                        <>
+                          <div className="inline-flex items-center gap-3 mb-4 flex-row-reverse justify-end">
+                            <span 
+                              className="text-sm font-mono px-3 py-1 rounded-full border"
+                              style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
+                            >
+                              {paso.num}
+                            </span>
+                            <div 
+                              className="w-10 h-10 rounded-xl flex items-center justify-center"
+                              style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
+                            >
+                              {paso.icon}
+                            </div>
+                          </div>
+                          <h3 className="text-2xl font-bold text-white mb-3">{paso.title}</h3>
+                          <p className="text-[#9999aa] leading-relaxed max-w-md ml-auto">
+                            {paso.description}
+                          </p>
+                        </>
+                      )}
                     </div>
-                    
-                    {/* Desktop: centered dot */}
-                    <div className="hidden md:block">
+
+                    {/* Center dot */}
+                    <div className="relative z-10 flex justify-center">
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={isInView ? { scale: 1 } : {}}
@@ -140,50 +147,76 @@ export function PropuestaProceso() {
                         </span>
                       </motion.div>
                     </div>
+
+                    {/* Right column */}
+                    <div className={`${!isEven ? "text-left pl-4" : "opacity-0 pointer-events-none"}`}>
+                      {!isEven && (
+                        <>
+                          <div className="inline-flex items-center gap-3 mb-4">
+                            <span 
+                              className="text-sm font-mono px-3 py-1 rounded-full border"
+                              style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
+                            >
+                              {paso.num}
+                            </span>
+                            <div 
+                              className="w-10 h-10 rounded-xl flex items-center justify-center"
+                              style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
+                            >
+                              {paso.icon}
+                            </div>
+                          </div>
+                          <h3 className="text-2xl font-bold text-white mb-3">{paso.title}</h3>
+                          <p className="text-[#9999aa] leading-relaxed max-w-md">
+                            {paso.description}
+                          </p>
+                        </>
+                      )}
+                    </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="flex-1 pb-2">
-                    {/* Mobile header: num + icon inline */}
-                    <div className="flex items-center gap-3 mb-3 md:hidden">
-                      <span 
-                        className="text-sm font-mono px-3 py-1 rounded-full border"
-                        style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
+                  {/* Mobile: simple left-aligned */}
+                  <div className="md:hidden flex items-start gap-4">
+                    {/* Dot */}
+                    <div className="relative z-10 flex-shrink-0">
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={isInView ? { scale: 1 } : {}}
+                        transition={{ duration: 0.5, delay: i * 0.15 + 0.3 }}
+                        className="w-14 h-14 rounded-full border-2 flex items-center justify-center bg-[#0a0a0f]"
+                        style={{ 
+                          borderColor: paso.color,
+                          boxShadow: `0 0 20px ${paso.color}30`,
+                        }}
                       >
-                        {paso.num}
-                      </span>
-                      <div 
-                        className="w-10 h-10 rounded-xl flex items-center justify-center"
-                        style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
-                      >
-                        {paso.icon}
-                      </div>
+                        <span className="text-base font-bold" style={{ color: paso.color }}>
+                          {paso.num}
+                        </span>
+                      </motion.div>
                     </div>
-                    
-                    {/* Desktop header */}
-                    <div className={`hidden md:flex items-center gap-3 mb-4 ${isEven ? "md:flex-row-reverse md:justify-start" : ""}`}>
-                      <span 
-                        className="text-sm font-mono px-3 py-1 rounded-full border"
-                        style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
-                      >
-                        {paso.num}
-                      </span>
-                      <div 
-                        className="w-10 h-10 rounded-xl flex items-center justify-center"
-                        style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
-                      >
-                        {paso.icon}
-                      </div>
-                    </div>
-                    
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3">{paso.title}</h3>
-                    <p className="text-[#9999aa] leading-relaxed max-w-md text-sm md:text-base">
-                      {paso.description}
-                    </p>
-                  </div>
 
-                  {/* Desktop spacer */}
-                  <div className="flex-1 hidden md:block" />
+                    {/* Content */}
+                    <div className="flex-1 pb-2">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span 
+                          className="text-sm font-mono px-3 py-1 rounded-full border"
+                          style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
+                        >
+                          {paso.num}
+                        </span>
+                        <div 
+                          className="w-10 h-10 rounded-xl flex items-center justify-center"
+                          style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
+                        >
+                          {paso.icon}
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-2">{paso.title}</h3>
+                      <p className="text-[#9999aa] leading-relaxed text-sm">
+                        {paso.description}
+                      </p>
+                    </div>
+                  </div>
                 </motion.div>
               );
             })}
