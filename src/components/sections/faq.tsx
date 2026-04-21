@@ -69,8 +69,10 @@ export function FAQ() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
+          <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6">FAQ</span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Preguntas Frecuentes
+            Preguntas{" "}
+            <span className="bg-gradient-to-r from-[#6d86f5] via-[#4a64eb] to-[#8b5cf6] bg-clip-text text-transparent">Frecuentes</span>
           </h2>
           <p className="mt-3 text-[#888899]">
             Todo lo que necesitas saber antes de empezar.

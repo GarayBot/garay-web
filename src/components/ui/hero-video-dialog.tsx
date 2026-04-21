@@ -132,14 +132,21 @@ export function HeroVideoDialog({
               <motion.button className="absolute -top-16 right-0 rounded-full bg-neutral-900/50 p-2 text-xl text-white ring-1 backdrop-blur-md dark:bg-neutral-100/50 dark:text-black">
                 <XIcon className="size-5" />
               </motion.button>
-              <div className="relative isolate z-1 size-full overflow-hidden rounded-2xl border-2 border-white">
-                <iframe
-                  src={videoSrc}
-                  title="Hero Video player"
-                  className="mt-0 size-full rounded-2xl"
-                  allowFullScreen
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
+              <div className="relative isolate z-1 size-full overflow-hidden rounded-2xl border-2 border-white flex items-center justify-center bg-[#1a1d27]">
+                {videoSrc ? (
+                  <iframe
+                    src={videoSrc}
+                    title="Hero Video player"
+                    className="mt-0 size-full rounded-2xl"
+                    allowFullScreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  ></iframe>
+                ) : (
+                  <div className="text-center p-8">
+                    <p className="text-2xl font-bold text-white mb-2">Próximamente</p>
+                    <p className="text-[#888899]">El video estará disponible muy pronto.</p>
+                  </div>
+                )}
               </div>
             </motion.div>
           </motion.div>

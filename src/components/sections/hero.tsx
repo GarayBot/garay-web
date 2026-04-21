@@ -37,8 +37,10 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
         >
-          Tu web no vende.{" "}
-          <span className="bg-gradient-to-r from-[#6d86f5] to-[#5b75f0] bg-clip-text text-transparent">La nuestra sí.</span>
+          Webs, apps y automatizaciones{" "}
+          <span className="block bg-gradient-to-r from-[#6d86f5] to-[#5b75f0] bg-clip-text text-transparent">
+            que hacen ganar dinero
+          </span>
         </motion.h1>
 
         <motion.p
@@ -105,9 +107,9 @@ export function Hero() {
           <p className="text-sm text-[#777788]">+50 empresas confían en nosotros</p>
         </motion.div>
 
-        {/* Hero Video Dialog */}
+        {/* Hero Video Dialog - MODAL VACÍO (sin video) */}
         <HeroVideoDialog
-          videoSrc="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          videoSrc=""
           thumbnailSrc="https://placehold.co/1280x720/1a1d27/4a64eb?text=Garay+Web"
           thumbnailAlt="Video presentación Garay"
           animationStyle="from-bottom"
