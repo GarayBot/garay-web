@@ -82,7 +82,7 @@ export function PropuestaProceso() {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Línea vertical animada — centrada en desktop, izquierda en móvil */}
+          {/* Línea vertical animada */}
           <div className="absolute left-7 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-[#2a2d3a]">
             <motion.div 
               className="absolute top-0 left-0 w-full bg-gradient-to-b from-[#4a64eb] via-[#6d86f5] to-[#8b5cf6]"
@@ -98,87 +98,13 @@ export function PropuestaProceso() {
               return (
                 <motion.div
                   key={paso.num}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, delay: i * 0.15 }}
-                  className="relative"
+                  className="relative flex items-start gap-4 md:gap-0"
                 >
-                  {/* Desktop layout: alternado izquierda/derecha */}
-                  <div className="hidden md:flex items-start gap-8">
-                    {/* Left side */}
-                    <div className={`flex-1 ${isEven ? "text-right pr-12" : "order-3 text-left pl-12"}`}>
-                      {isEven && (
-                        <>
-                          <div className={`inline-flex items-center gap-3 mb-4 ${isEven ? "flex-row-reverse" : ""}`}>
-                            <span 
-                              className="text-sm font-mono px-3 py-1 rounded-full border"
-                              style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
-                            >
-                              {paso.num}
-                            </span>
-                            <div 
-                              className="w-10 h-10 rounded-xl flex items-center justify-center"
-                              style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
-                            >
-                              {paso.icon}
-                            </div>
-                          </div>
-                          <h3 className="text-2xl font-bold text-white mb-3">{paso.title}</h3>
-                          <p className="text-[#9999aa] leading-relaxed max-w-md ml-auto">
-                            {paso.description}
-                          </p>
-                        </>
-                      )}
-                    </div>
-
-                    {/* Center dot */}
-                    <div className="relative z-10 flex-shrink-0">
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        animate={isInView ? { scale: 1 } : {}}
-                        transition={{ duration: 0.5, delay: i * 0.15 + 0.3 }}
-                        className="w-16 h-16 rounded-full border-2 flex items-center justify-center"
-                        style={{ 
-                          borderColor: paso.color,
-                          backgroundColor: "#0a0a0f",
-                          boxShadow: `0 0 30px ${paso.color}20`,
-                        }}
-                      >
-                        <span className="text-lg font-bold" style={{ color: paso.color }}>
-                          {paso.num}
-                        </span>
-                      </motion.div>
-                    </div>
-
-                    {/* Right side */}
-                    <div className={`flex-1 ${!isEven ? "text-left pl-12" : "order-1 text-right pr-12"}`}>
-                      {!isEven && (
-                        <>
-                          <div className="inline-flex items-center gap-3 mb-4">
-                            <span 
-                              className="text-sm font-mono px-3 py-1 rounded-full border"
-                              style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
-                            >
-                              {paso.num}
-                            </span>
-                            <div 
-                              className="w-10 h-10 rounded-xl flex items-center justify-center"
-                              style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
-                            >
-                              {paso.icon}
-                            </div>
-                          </div>
-                          <h3 className="text-2xl font-bold text-white mb-3">{paso.title}</h3>
-                          <p className="text-[#9999aa] leading-relaxed max-w-md">
-                            {paso.description}
-                          </p>
-                        </>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Mobile layout: simple vertical */}
-                  <div className="flex md:hidden items-start gap-4">
+                  {/* Mobile: todo junto a la izquierda */}
+                  <div className="md:hidden flex items-start gap-4">
                     {/* Dot */}
                     <div className="relative z-10 flex-shrink-0">
                       <motion.div
@@ -196,7 +122,6 @@ export function PropuestaProceso() {
                         </span>
                       </motion.div>
                     </div>
-
                     {/* Content */}
                     <div className="flex-1 pb-2">
                       <div className="flex items-center gap-3 mb-3">
@@ -218,6 +143,53 @@ export function PropuestaProceso() {
                         {paso.description}
                       </p>
                     </div>
+                  </div>
+
+                  {/* Desktop: alternado */}
+                  <div className="hidden md:contents">
+                    {/* Left column */}
+                    <div className={`flex-1 ${isEven ? "text-right pr-12" : "order-3 pl-12"}`}>
+                      <div className={`inline-flex items-center gap-3 mb-4 ${isEven ? "flex-row-reverse" : ""}`}>
+                        <span 
+                          className="text-sm font-mono px-3 py-1 rounded-full border"
+                          style={{ borderColor: `${paso.color}30`, color: paso.color, backgroundColor: `${paso.color}10` }}
+                        >
+                          {paso.num}
+                        </span>
+                        <div 
+                          className="w-10 h-10 rounded-xl flex items-center justify-center"
+                          style={{ backgroundColor: `${paso.color}15`, color: paso.color }}
+                        >
+                          {paso.icon}
+                        </div>
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-3">{paso.title}</h3>
+                      <p className="text-[#9999aa] leading-relaxed max-w-md ml-auto">
+                        {paso.description}
+                      </p>
+                    </div>
+
+                    {/* Center dot */}
+                    <div className="relative z-10 flex-shrink-0">
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={isInView ? { scale: 1 } : {}}
+                        transition={{ duration: 0.5, delay: i * 0.15 + 0.3 }}
+                        className="w-16 h-16 rounded-full border-2 flex items-center justify-center"
+                        style={{ 
+                          borderColor: paso.color,
+                          backgroundColor: "#0a0a0f",
+                          boxShadow: `0 0 30px ${paso.color}20`,
+                        }}
+                      >
+                        <span className="text-lg font-bold" style={{ color: paso.color }}>
+                          {paso.num}
+                        </span>
+                      </motion.div>
+                    </div>
+
+                    {/* Right column - empty spacer when content is on left */}
+                    <div className={`flex-1 ${isEven ? "order-3" : ""}`} />
                   </div>
                 </motion.div>
               );
