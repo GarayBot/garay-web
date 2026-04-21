@@ -37,7 +37,7 @@ function ReviewCard({ img, name, username, body }: { img: string; name: string; 
 
 export function TestimoniosLong() {
   return (
-    <section id="testimonios" className="py-24">
+    <section id="testimonios" className="py-24 w-full">
       <div className="mx-auto max-w-6xl mb-12 text-center px-4 md:px-6">
         <BlurFade delay={0.1} inView>
           <span className="inline-block px-4 py-2 rounded-full border border-[#4a64eb]/20 bg-[#4a64eb]/5 text-sm text-[#6d86f5] mb-6 text-center">Testimonios</span>
