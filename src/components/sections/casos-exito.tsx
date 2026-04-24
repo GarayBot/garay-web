@@ -4,107 +4,106 @@ import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
 
-
 const CASOS = [
   {
     num: "01",
-    titulo: "CRM/ERP para Ahorro Energético",
-    empresa: "Spikes Energía",
-    tags: ["Next.js", "Express", "Docker"],
-    desc: "Gestión completa de contratos, leads, comisiones y documentación. 3 microservicios + chatbot WhatsApp con IA.",
-    metricas: [{ valor: "24", label: "Pantallas" }, { valor: "3", label: "Microservicios" }],
-    thumbnail: "/portfolio/Spikes/1.png",
-    slug: "spikes",
-  },
-  {
-    num: "02",
-    titulo: "Plataforma de Salud Digital",
-    empresa: "MunDoctor",
-    tags: ["React", "Node.js", "Stripe"],
-    desc: "Pacientes, profesionales y admins. Citas en tiempo real, geolocalización, pagos con Stripe y Socket.io.",
-    metricas: [{ valor: "16", label: "Pantallas" }, { valor: "3", label: "Roles" }],
-    thumbnail: "/portfolio/Mundoctor/1.png",
-    slug: "mundoctor",
-  },
-  {
-    num: "03",
-    titulo: "Evaluación de Talento VISTA™",
-    empresa: "Impakta Jugadores",
-    tags: ["Next.js", "Prisma", "TypeScript"],
-    desc: "Plataforma multi-tenant para evaluar equipos en 6 dimensiones. Informes PDF, dashboards y radar charts.",
-    metricas: [{ valor: "15", label: "Pantallas" }, { valor: "6", label: "Dimensiones" }],
-    thumbnail: "/portfolio/impakta-jugadores/1.png",
-    slug: "impakta-jugadores",
-  },
-  {
-    num: "04",
-    titulo: "Dashboard para Restaurantes",
-    empresa: "Chefs",
-    tags: ["Bootstrap", "Chart.js", "jQuery"],
-    desc: "Panel admin completo: pedidos, facturas, reseñas, calendario, analíticas y gestión de clientes.",
-    metricas: [{ valor: "10", label: "Pantallas" }, { valor: "100%", label: "Responsive" }],
-    thumbnail: "/portfolio/Chefs/1.png",
-    slug: "chefs",
-  },
-  {
-    num: "05",
     titulo: "Experiencia 3D Interactiva",
-    empresa: "Aqualinks 3D",
-    tags: ["Three.js", "React", "Vite"],
+    empresa: "Aqualinks",
+    tags: ["React", "Vue", "Docker"],
     desc: "Landing page inmersiva con animaciones 3D para tecnología hídrica. Navegación interactiva en tiempo real.",
     metricas: [{ valor: "3D", label: "Interactivo" }, { valor: "9", label: "Escenas" }],
     thumbnail: "/portfolio/Aqualinks_3d/1.png",
     slug: "aqualinks-3d",
   },
   {
-    num: "06",
-    titulo: "Web Corporativa para Ingeniería",
-    empresa: "NEX Ingeniería",
-    tags: ["WordPress", "PHP", "JavaScript"],
-    desc: "Web corporativa premium con animación 3D. Más de 25 años de trayectoria y 2.520 proyectos realizados.",
-    metricas: [{ valor: "25+", label: "Años" }, { valor: "2.5K", label: "Proyectos" }],
-    thumbnail: "/portfolio/NexIngenieria/1.png",
-    slug: "nexingenieria",
-  },
-  {
-    num: "07",
+    num: "02",
     titulo: "Sala de Conciertos Icónica",
     empresa: "Luz de Gas",
-    tags: ["React", "TypeScript", "Tailwind"],
+    tags: ["React", "TypeScript", "Vite"],
     desc: "Web para una de las salas de conciertos más emblemáticas de Barcelona. Calendario de eventos y ambientes.",
     metricas: [{ valor: "6", label: "Secciones" }, { valor: "SPA", label: "Navegación" }],
     thumbnail: "/portfolio/LuzDeGas/1.png",
     slug: "luzdegas",
   },
   {
+    num: "03",
+    titulo: "Web Corporativa para Ingeniería",
+    empresa: "NEX Ingeniería",
+    tags: ["WordPress", "Diseño Web"],
+    desc: "Web corporativa premium con animación 3D. Más de 25 años de trayectoria y 2.520 proyectos realizados.",
+    metricas: [{ valor: "25+", label: "Años" }, { valor: "2.5K", label: "Proyectos" }],
+    thumbnail: "/portfolio/NexIngenieria/1.png",
+    slug: "nexingenieria",
+  },
+  {
+    num: "04",
+    titulo: "Gestión de Subastas de Vehículos",
+    empresa: "Florida Premium",
+    tags: ["React", "Tailwind CSS", "Supabase"],
+    desc: "Plataforma para brokers de vehículos con Copart, IAA y Manheim. Estados semánticos y trazabilidad completa.",
+    metricas: [{ valor: "8", label: "Módulos" }, { valor: "Real-time", label: "Tracking" }],
+    thumbnail: "/portfolio/AppBrokers/1.png",
+    slug: "appbrokers",
+  },
+  {
+    num: "05",
+    titulo: "Moda de Lujo",
+    empresa: "MCORTÉS",
+    tags: ["Diseño Web", "Branding"],
+    desc: "Web corporativa para marca de moda de lujo. Identidad visual premium y experiencia de usuario elegante.",
+    metricas: [{ valor: "Luxury", label: "Branding" }, { valor: "5", label: "Secciones" }],
+    thumbnail: "/portfolio/MCortes/1.png",
+    slug: "mcortes",
+  },
+  {
+    num: "06",
+    titulo: "App de Salud y Nutrición",
+    empresa: "EvenHealth",
+    tags: ["Diseño Web", "Mobile"],
+    desc: "Landing page para app móvil de reducción de azúcar en sangre. 5.000+ usuarios activos y 74% mejoran hábitos.",
+    metricas: [{ valor: "5K+", label: "Usuarios" }, { valor: "74%", label: "Mejora" }],
+    thumbnail: "/portfolio/EvenHealth/1.png",
+    slug: "evenhealth",
+  },
+  {
+    num: "07",
+    titulo: "Alquiler Vacacional",
+    empresa: "HomeForGuest",
+    tags: ["WordPress", "Vue"],
+    desc: "Marketplace de alquiler vacacional con villas, apartamentos y casas rurales. Buscador avanzado y reservas.",
+    metricas: [{ valor: "Multi", label: "Filtros" }, { valor: "Directa", label: "Reserva" }],
+    thumbnail: "/portfolio/HomeForGuest/1.png",
+    slug: "homeforguest",
+  },
+  {
     num: "08",
-    titulo: "Gestión de Carrera Popular",
-    empresa: "Cursa Bellvitge",
-    tags: ["PHP", "MySQL", "JavaScript"],
-    desc: "Plataforma completa para carreras populares con inscripción online, clasificaciones y diplomas PDF.",
-    metricas: [{ valor: "7", label: "Pantallas" }, { valor: "500+", label: "Corredores" }],
-    thumbnail: "/portfolio/CursaBellvitge/1.png",
-    slug: "cursabellvitge",
+    titulo: "E-commerce de Carga Móvil",
+    empresa: "CaserMovil",
+    tags: ["WordPress", "WooCommerce", "Stripe"],
+    desc: "E-commerce de carga móvil para vehículos eléctricos. Suscripciones, múltiples pasarelas y soporte multilingüe.",
+    metricas: [{ valor: "3", label: "Pagos" }, { valor: "GDPR", label: "Cumplido" }],
+    thumbnail: "/portfolio/Casermovil/1.png",
+    slug: "casermovil",
   },
   {
     num: "09",
-    titulo: "Portal de Administradores",
-    empresa: "Adminventa",
-    tags: ["WordPress", "PHP", "CSS"],
-    desc: "El mayor portal para administradores de fincas en España. Directorio de empresas y servicios del sector.",
-    metricas: [{ valor: "30+", label: "Categorías" }, { valor: "#1", label: "Portal" }],
-    thumbnail: "/portfolio/Adminventa/1.png",
-    slug: "adminventa",
+    titulo: "Reservas Deportivas + Streaming",
+    empresa: "Onplay",
+    tags: ["React", "Vue", "Tailwind CSS"],
+    desc: "Reserva de pistas deportivas con grabación de partidos y calendario interactivo de horarios.",
+    metricas: [{ valor: "12", label: "Pantallas" }, { valor: "Real-time", label: "Reservas" }],
+    thumbnail: "/portfolio/Onplay/1.png",
+    slug: "onplay",
   },
   {
     num: "10",
-    titulo: "Plataforma Deportiva OnPlay",
-    empresa: "OnPlay",
-    tags: ["React", "Supabase", "Framer"],
-    desc: "Reserva de pistas deportivas con grabación de partidos y calendario interactivo de horarios.",
-    metricas: [{ valor: "2", label: "Pantallas" }, { valor: "Real-time", label: "Reservas" }],
-    thumbnail: "/portfolio/Onplay/1.png",
-    slug: "onplay",
+    titulo: "Evaluación de Talento VISTA™",
+    empresa: "Impakta",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    desc: "Plataforma multi-tenant para evaluar equipos en 6 dimensiones. Informes PDF, dashboards y radar charts.",
+    metricas: [{ valor: "7", label: "Roles" }, { valor: "6", label: "Dimensiones" }],
+    thumbnail: "/portfolio/Impakta/1.png",
+    slug: "impakta",
   },
 ];
 
@@ -229,7 +228,7 @@ function DesktopCarousel() {
               />
             </div>
             <a href="/casos-de-exito" className="inline-flex items-center gap-2 rounded-full border border-[#4a64eb] px-5 py-2.5 text-xs font-medium text-[#4a64eb] hover:bg-[#4a64eb]/10 transition-colors flex-shrink-0">
-              Descubre +50 proyectos →
+              Descubre +44 proyectos →
             </a>
           </div>
         </div>
@@ -266,7 +265,7 @@ export function CasosExito() {
         </div>
         <div className="mt-8 text-center">
           <a href="/casos-de-exito" className="inline-flex items-center gap-2 rounded-full border border-[#4a64eb] px-6 py-2.5 text-sm font-medium text-[#4a64eb] hover:bg-[#4a64eb]/10 transition-colors">
-            Descubre +50 proyectos →
+            Descubre +44 proyectos →
           </a>
         </div>
       </section>
